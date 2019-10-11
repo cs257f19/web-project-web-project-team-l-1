@@ -1,0 +1,7 @@
+﻿User Stories
+* As a parent, I want to search by children friendly content, so that I can watch family safe movies with my family
+* As a sci phy fan, I want to find movies that are about space, so that I can live out my dream as an astronaut
+* As a foreign language speaker, I want to find a movie in my language, so that I can watch it without dubbed speech. 
+* As a parent, I want to search by children friendly content, so that I can watch family safe movies with my family
+* As a sci phy fan, I want to find movies that are about space, so that I can live out my dream as an astronaut
+* As a foreign language speaker, I want to find a movie in my language, so that I can watch it without dubbed speech.
