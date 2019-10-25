@@ -7,7 +7,7 @@ CREATE TABLE imdb_5000 (
   overview text, 
   popularity real,
   release_date date, 
-  revenue int, 
+  revenue bigint, 
   runtime int, 
   tagline text, 
   vote_average real, 
