@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS moviesdata;
+DROP TABLE IF EXISTS imbd_5000;
 CREATE TABLE imbd_5000 (
   title text, 
   budget int,
