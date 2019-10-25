@@ -20,15 +20,15 @@ CREATE TABLE imbd_5000 (
   production_countries text, 
   spoken_languages text, 
   director text, 
-  character1:name1 text, 
-  character2:name2 text, 
-  character3:name3 text, 
-  character4:name4 text, 
-  character5:name5 text, 
-  character6:name6 text, 
-  character7:name7 text, 
-  character8:name8 text, 
-  character9:name9 text, 
-  character10:name10 text
+  character1name1 text, 
+  character2name2 text, 
+  character3name3 text, 
+  character4name4 text, 
+  character5name5 text, 
+  character6name6 text, 
+  character7name7 text, 
+  character8name8 text, 
+  character9name9 text, 
+  character10name10 text
   
 );
