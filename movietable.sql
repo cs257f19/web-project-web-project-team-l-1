@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS imbd_5000;
-CREATE TABLE imbd_5000 (
+DROP TABLE IF EXISTS imdb_5000;
+CREATE TABLE imdb_5000 (
   title text, 
   budget int,
   homepage text,
