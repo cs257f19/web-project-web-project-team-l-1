@@ -31,19 +31,16 @@ class DataSource:
 			print ("Something went wrong when executing the query: ", e)
 			return None
 
-	def getMoviesByLanguage(self, connection, language):
+	def getMoviesByLength(self, connection, minRuntime, maxRuntime):
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE original_language = \'" + language + "\'"
+			query = "SELECT title FROM imdb_5000 WHERE runtime > \'" + str(minRuntime) + "\' AND runtime < \'" + str(maxRuntime) + "\'"
 			cursor.execute(query)
 			return cursor.fetchall()
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
-
-	def getMoviesByLength(connection, length):
-		return []
-
+		
 def main():
 	user = 'yuez'
 	password = 'glass944happy'
@@ -52,7 +49,7 @@ def main():
 	connection = datasource.tryConnect()
 
 	# Execute a simple query: how many earthquakes above the specified magnitude are there in the data?
-	results = datasource.getMoviesByLanguage(connection, "English")
+	results = datasource.getMoviesByLength(connection, 60, 90)
 	
 	if results is not None:
 		print("Query results: ")
