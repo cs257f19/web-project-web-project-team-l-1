@@ -31,15 +31,17 @@ class DataSource:
 			print ("Something went wrong when executing the query: ", e)
 			return None
 		
-	def getMoviesByRating(self, connection, average_rating):		
-		try:
-			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE avg_rating > 7.5"
-			cursor.execute(query)
-			return cursor.fetchall()	
-		except Exception as e:
-			print ("Something went wrong when executing the query: ", e)
-			return None
+	def getMoviesByBudget(self, connection, budget):		
+	def getMoviesByHomepage(self, connection, homepage):
+	def getMoviesByRevenue(self, connection, revenue):
+	def getMoviesByRating(self, connection, average_rating):
+	def getMoviesByVoteCount(self, connection, vote_count):
+		
+	def getMoviesByDirector(self, connection, director):
+	def getMoviesByKeywords(self, connection, keywords):
+	def getMoviesByTagline(self, connection, tagline):
+	def getMoviesByReleaseDate(self, connection, release_date):
+	def getMoviesByReleaseDate(self, connection, release_date):
 
 	def getMoviesByLength(self, connection, minRuntime, maxRuntime):
 		try:
