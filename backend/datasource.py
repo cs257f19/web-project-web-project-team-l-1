@@ -1,5 +1,6 @@
 import psycopg2
 import getpass
+# coding: utf-8
 
 class DataSource:
 	
