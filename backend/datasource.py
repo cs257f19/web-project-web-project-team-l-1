@@ -38,11 +38,8 @@ class DataSource:
 		return []
 
 def main():
-	database = 'imdb_5000'
 	user = 'yuez'
-	password = getpass.getpass()
-	host = 'perlman.mathcs.carleton.edu'
-	port = 22
+	password = 'glass944happy'
 	datasource = DataSource(user, password)
 
 	connection = datasource.tryConnect()
