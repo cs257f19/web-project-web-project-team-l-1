@@ -21,7 +21,7 @@ class DataSource:
 			exit()
 		return connection
 
-	def getMoviesByGenre(connection, genre):		
+	def getMoviesByGenre(self, connection, genre):		
 		try:
 			cursor = connection.cursor()
 			query = "SELECT title FROM imdb_5000 WHERE genre1 = " + genre + "OR genre2 = " + genre + "OR genre3 = " + genre
