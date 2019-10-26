@@ -101,7 +101,7 @@ class DataSource:
 
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE average_rating > \’” + average_rating + “\’ ORDER BY average_rating Desc"
+			query = "SELECT title FROM imdb_5000 WHERE vote_average > \'" + str(vote_average) + "\' ORDER BY vote_average Desc"
 			cursor.execute(query)
 			return cursor.fetchall()
 		except Exception as e:
