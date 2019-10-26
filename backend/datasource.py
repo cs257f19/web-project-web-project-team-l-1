@@ -123,9 +123,9 @@ def main():
 	connection = datasource.tryConnect()
 	
 	# get list of movies in results
-	results = datasource.getMoviesByLength(connection, 60, 90)
+	# results = datasource.getMoviesByLength(connection, 60, 90)
 	# results = datasource.getMoviesByGenre(connection, 'Horror')
-	# results = datasource.getMoviesByVoteAverage(connection, 8.2)
+	results = datasource.getMoviesByVoteAverage(connection, 8.2)
 	
 	if results is not None:
 		print("Query results: ")
