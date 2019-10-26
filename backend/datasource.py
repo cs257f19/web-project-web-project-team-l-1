@@ -24,7 +24,7 @@ class DataSource:
 	def getMoviesByGenre(self, connection, genre):		
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE genre1 = " + genre + " OR genre2 = " + genre + " OR genre3 = " + genre
+			query = "SELECT title FROM imdb_5000 WHERE genre1 = " + \'genre\' + " OR genre2 = " + \'genre\' + " OR genre3 = " + \'genre\'
 			cursor.execute(query)
 			return cursor.fetchall()	
 		except Exception as e:
