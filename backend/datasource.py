@@ -34,7 +34,7 @@ class DataSource:
 	def getMoviesByLanguage(self, connection, language):
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE original_language = \'" + language
+			query = "SELECT title FROM imdb_5000 WHERE original_language = \'" + language + "\'"
 			cursor.execute(query)
 			return cursor.fetchall()
 		except Exception as e:
