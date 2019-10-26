@@ -41,7 +41,8 @@ class DataSource:
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
-
+	'''
+	These are methods that will be implemented in the website.
 	def getMoviesByBudget(self, connection, budget):
 	def getMoviesByRevenue(self, connection, revenue):
 	def getMoviesByRating(self, connection, average_rating):
@@ -62,6 +63,7 @@ class DataSource:
 	def getMoviesByProductionCountires(self, connection, production_countries:
 	def getMoviesBySpokenLanguage(self, connection, spoken_language):	
 	def getMoviesByCharacterName(self, connection, charactername):
+	'''
 
 	def getMoviesByLength(self, connection, minRuntime, maxRuntime):
 
