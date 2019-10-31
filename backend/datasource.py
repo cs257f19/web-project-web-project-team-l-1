@@ -104,7 +104,7 @@ class DataSource:
 				fetchList[item] = s
 			#fetchTuple = tuple(fetchList)
 			print fetchList[0]
-			return fetchList
+			return fetchList[0]
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
