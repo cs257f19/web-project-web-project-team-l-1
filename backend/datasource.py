@@ -151,7 +151,7 @@ def main():
 	if results is not None:
 		print("Query results: ")
 		for item in results:
-			print(s)
+			print(item)
 
 	# Disconnect from database
 	connection.close()
