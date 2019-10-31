@@ -93,7 +93,7 @@ class DataSource:
 			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
 			cursor.execute(query)
 			fetchList = cursor.fetchall()
-			for item in fetchList
+			for item in fetchList:
 				item = str(item)
 				item = item.replace(',', '')
 				item = item.replace(')', '')
