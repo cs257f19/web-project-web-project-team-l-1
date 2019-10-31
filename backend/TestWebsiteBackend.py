@@ -1,14 +1,14 @@
 import unittest
+
 from datasource import *
 
 class TestBackend(unittest.TestCase):
     def setUp(self) -> None:
-        self.ds = DataSource()
+        self.movie = DataSource()
 
-    def test_get_movie_by_length(self):
-        vote_average = 8
-        result = self.ds.getMoviesByLength(vote_average)
-
+    def test_getDirectorByMovie(self):
+        title = 'Avatar'
+        self.assertEqual(self.movie.getDirectorByMovie(title), "James Cameron")
 
 if __name__ == "__main__":
 	unittest.main()
