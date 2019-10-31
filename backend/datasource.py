@@ -24,11 +24,9 @@ class DataSource:
 
 		'''
 		Retrieves all Movies with a certain genre.
-
 		Parameters:
 			Connection- the connection to the database
 			Genre- retrieve every movie with this genre
-
 		Returns:
 		A collection of all movies with this genre
 		'''		
@@ -41,6 +39,60 @@ class DataSource:
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
+        
+    
+    	def getMoviesByLength(self, connection, minRuntime, maxRuntime):
+
+		'''
+		Retrieve all movies within a certain range of runtime.
+		Parameters:
+		minRuntime: minimum of runtime
+		maxRuntime: maximum of runtime
+		Returns:
+		A collection of movies within this certain range of runtime.
+		'''
+
+		try:
+			cursor = connection.cursor()
+			query = "SELECT title FROM imdb_5000 WHERE runtime > \'" + str(minRuntime) + "\' AND runtime < \'" + str(maxRuntime) + "\'"
+			cursor.execute(query)
+			return cursor.fetchall()
+		except Exception as e:
+			print ("Something went wrong when executing the query: ", e)
+			return None
+		
+	def getMoviesByVoteAverage(self, connection, vote_average):
+
+		'''
+		Retrieve all movies within a certain vote average.
+		Parameters:
+		Vote average minimum 
+		Returns:
+		Movies in descending order above threshold
+		'''
+
+		try:
+			cursor = connection.cursor()
+			query = "SELECT title FROM imdb_5000 WHERE vote_average > \'" + str(vote_average) + "\' ORDER BY vote_average Desc"
+			cursor.execute(query)
+			return cursor.fetchall()
+		except Exception as e:
+			print ("Something went wrong when executing the query: ", e)
+			return None
+		
+    def getDirectorByMovie(self, connection, title):
+        
+            try:
+			cursor = connection.cursor()
+			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
+			cursor.execute(query)
+			return cursor.fetchall()
+		except Exception as e:
+			print ("Something went wrong when executing the query: ", e)
+			return None
+            
+            
+            
 	'''
 	These are methods that will be implemented in the website.
 	def getMoviesByBudget(self, connection, budget):
@@ -65,49 +117,6 @@ class DataSource:
 	def getMoviesByCharacterName(self, connection, charactername):
 	'''
 
-	def getMoviesByLength(self, connection, minRuntime, maxRuntime):
-
-		'''
-		Retrieve all movies within a certain range of runtime.
-
-		Parameters:
-		minRuntime: minimum of runtime
-		maxRuntime: maximum of runtime
-
-		Returns:
-		A collection of movies within this certain range of runtime.
-		'''
-
-		try:
-			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE runtime > \'" + str(minRuntime) + "\' AND runtime < \'" + str(maxRuntime) + "\'"
-			cursor.execute(query)
-			return cursor.fetchall()
-		except Exception as e:
-			print ("Something went wrong when executing the query: ", e)
-			return None
-		
-	def getMoviesByVoteAverage(self, connection, vote_average):
-
-		'''
-		Retrieve all movies within a certain vote average.
-
-		Parameters:
-		Vote average minimum 
-
-		Returns:
-		Movies in descending order above threshold
-		'''
-
-		try:
-			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE vote_average > \'" + str(vote_average) + "\' ORDER BY vote_average Desc"
-			cursor.execute(query)
-			return cursor.fetchall()
-		except Exception as e:
-			print ("Something went wrong when executing the query: ", e)
-			return None
-		
 
 def main():
 
@@ -125,15 +134,15 @@ def main():
 	# get list of movies in results
 	# results = datasource.getMoviesByLength(connection, 60, 90)
 	# results = datasource.getMoviesByGenre(connection, 'Horror')
-	results = datasource.getMoviesByVoteAverage(connection, 8.2)
+	# results = datasource.getMoviesByVoteAverage(connection, 8.2)
+    results = datasource.getDirectorByMovie(connection, 'Avatar')
 	
 	if results is not None:
 		print("Query results: ")
 		for item in results:
-			print(item)
+			print(item.strip(","))
 
 	# Disconnect from database
 	connection.close()
 		
 main()
-
