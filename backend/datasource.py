@@ -141,7 +141,10 @@ def main():
 		print("Query results: ")
 		for item in results:
 			s = str(item)
-			s = s.replace(',' and '(' and ')' and "'", '')
+			s = s.replace(',', '')
+			s = s.replace(')', '')
+			s = s.replace('(', '')
+			s = s.replace(''', '')
 			print(s)
 
 	# Disconnect from database
