@@ -79,8 +79,9 @@ class DataSource:
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
+		
 	# quaryCleaner is a helper method for cleaning cursor.fetchall() items and turning them into strings without tuple formatting.
-	def queryCleaner(self, self.fetchList):
+	def queryCleaner(self, fetchList):
 		length = len(fetchList)
 		for item in range(length):
 			s = str(fetchList[item])
