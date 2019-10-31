@@ -141,7 +141,7 @@ def main():
 		print("Query results: ")
 		for item in results:
 			string s = item
-			print(s)
+			print('test string--' + s)
 			s = s.replace(',', '')
 			print(s)
 
