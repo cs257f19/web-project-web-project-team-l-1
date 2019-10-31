@@ -66,7 +66,7 @@ class DataSource:
 		'''
 		Retrieve all movies within a certain vote average.
 		Parameters:
-		Vote average minimum 
+		Vote_average:
 		Returns:
 		Movies in descending order above threshold
 		'''
@@ -81,7 +81,13 @@ class DataSource:
 			return None
 		
     	def getDirectorByMovie(self, connection, title):
-        
+		
+		'''
+		Retrieve name of director who directs a certain movie.
+		Parameters:
+		
+		'''
+	
            	try:
 			cursor = connection.cursor()
 			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
