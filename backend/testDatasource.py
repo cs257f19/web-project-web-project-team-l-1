@@ -17,7 +17,8 @@ class DataSourceTester(unittest.TestCase):
 	
     def test_getDirectorByMovie_type(self):
 	title = 'Avatar'
-	self.assertEqual(type(self.movie.getDirectorByMovie(self.connection, title)), 'str')
+	string = ''
+	self.assertEqual(type(self.movie.getDirectorByMovie(self.connection, title)), type(string))
 	
 if __name__ == "__main__":
 	unittest.main()
