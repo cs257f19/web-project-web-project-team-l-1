@@ -155,14 +155,14 @@ def main():
 	# get list of movies in results
 	# results = datasource.getMoviesByLength(connection, 60, 90)
 	# results = datasource.getMoviesByGenre(connection, 'Horror')
-	results = datasource.getMoviesByVoteAverage(connection, 8.2)
-    	#results = datasource.getDirectorByMovie(connection, 'Avatar')
+	#results = datasource.getMoviesByVoteAverage(connection, 8.2)
+    	results = datasource.getDirectorByMovie(connection, 'Avatar')
 	
 	if results is not None:
 		print("Query results: ")
 		#for item in results:
 		#	print(item)
-		#print(results)
+		print(results)
 
 	# Disconnect from database
 	connection.close()
