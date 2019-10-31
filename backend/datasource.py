@@ -140,6 +140,9 @@ def main():
 	if results is not None:
 		print("Query results: ")
 		for item in results:
+			if len(item) > 0:
+    				if item[-1:] == ",":
+        			item = item[:-1]
 			print(item)
 
 	# Disconnect from database
