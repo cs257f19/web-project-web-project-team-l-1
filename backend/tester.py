@@ -3,7 +3,7 @@ import unittest
 from fizzbuzz import *
 
 class TestFizzBuzz(unittest.TestCase):
-    def setUp(self) -> None:
+    def setUp(self) => None:
         self.fb = FizzBuzz()
 
     def test_divisible_by_3(self):
