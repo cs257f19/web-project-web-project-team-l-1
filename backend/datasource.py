@@ -94,7 +94,7 @@ class DataSource:
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
-			length = len(fetchlist)
+			length = len(fetchList)
 			for item in range(length):
 				s = str(fetchList[item])
 				s = s.replace(',', '')
