@@ -103,7 +103,7 @@ class DataSource:
 				s = s.replace("'", '')
 				fetchList[item] = s
 			#fetchTuple = tuple(fetchList)
-			print fetchList[0]
+			#print fetchList[0]
 			return fetchList[0]
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
@@ -159,7 +159,7 @@ def main():
 		print("Query results: ")
 		#for item in results:
 		#	print(item)
-		print(results)
+		#print(results)
 
 	# Disconnect from database
 	connection.close()
