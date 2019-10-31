@@ -5,7 +5,6 @@ class DataSourceTester(unittest.TestCase):
     
     def setUp(self):
 	self.connection = DataSource('yuez','glass944happy')
-	self.ds = DataSource()
 
     def test_getDirectorByMovie(self):
         title = 'Avatar'
