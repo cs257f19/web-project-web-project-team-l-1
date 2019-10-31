@@ -80,9 +80,9 @@ class DataSource:
 			print ("Something went wrong when executing the query: ", e)
 			return None
 		
-    def getDirectorByMovie(self, connection, title):
+    	def getDirectorByMovie(self, connection, title):
         
-            try:
+           	try:
 			cursor = connection.cursor()
 			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
 			cursor.execute(query)
@@ -135,7 +135,7 @@ def main():
 	# results = datasource.getMoviesByLength(connection, 60, 90)
 	# results = datasource.getMoviesByGenre(connection, 'Horror')
 	# results = datasource.getMoviesByVoteAverage(connection, 8.2)
-    results = datasource.getDirectorByMovie(connection, 'Avatar')
+    	results = datasource.getDirectorByMovie(connection, 'Avatar')
 	
 	if results is not None:
 		print("Query results: ")
