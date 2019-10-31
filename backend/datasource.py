@@ -144,7 +144,7 @@ def main():
 			s = s.replace(',', '')
 			s = s.replace(')', '')
 			s = s.replace('(', '')
-			s = s.replace(''', '')
+			s = s.replace("'", '')
 			print(s)
 
 	# Disconnect from database
