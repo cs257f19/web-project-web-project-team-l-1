@@ -94,11 +94,11 @@ class DataSource:
 			cursor.execute(query)
 			fetchList = cursor.fetchall()
 			for item in fetchList
-				s = str(item)
-				s = s.replace(',', '')
-				s = s.replace(')', '')
-				s = s.replace('(', '')
-				s = s.replace("'", '')
+				item = str(item)
+				item = item.replace(',', '')
+				item = item.replace(')', '')
+				item = item.replace('(', '')
+				item = item.replace("'", '')
 			return fetchList
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
