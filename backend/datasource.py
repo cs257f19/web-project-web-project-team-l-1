@@ -140,7 +140,8 @@ def main():
 	if results is not None:
 		print("Query results: ")
 		for item in results:
-			string s = item
+			s = 'test'
+			s = item
 			print('test string--' + s)
 			s = s.replace(',', '')
 			print(s)
