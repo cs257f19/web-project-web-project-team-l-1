@@ -25,10 +25,10 @@ class DataSource:
 		'''
 		Retrieves all Movies with a certain genre.
 		Parameters:
-			Connection- the connection to the database
-			Genre- retrieve every movie with this genre
+			connection- the connection to the database
+			genre- retrieve every movie with this genre
 		Returns:
-		A collection of all movies with this genre
+			A collection of all movies with this genre
 		'''		
 	
 		try:
@@ -46,10 +46,11 @@ class DataSource:
 		'''
 		Retrieve all movies within a certain range of runtime.
 		Parameters:
-		minRuntime: minimum of runtime
-		maxRuntime: maximum of runtime
+			connection- the connection to the database
+			minRuntime- minimum of runtime
+			maxRuntime- maximum of runtime
 		Returns:
-		A collection of movies within this certain range of runtime.
+			A collection of movies within this certain range of runtime.
 		'''
 
 		try:
@@ -66,9 +67,10 @@ class DataSource:
 		'''
 		Retrieve all movies within a certain vote average.
 		Parameters:
-		Vote_average:
+			connection- the connection to the database
+			vote_average- average vote of given movie 
 		Returns:
-		Movies in descending order above threshold
+			Movies in descending order above threshold
 		'''
 
 		try:
@@ -86,7 +88,10 @@ class DataSource:
 		'''
 		Retrieve name of director who directs a certain movie.
 		Parameters:
-		
+			connection- the connection to the database
+			title- the title of a given movie
+		Returns:
+			Director name given a certain movie
 		'''
 	
            	try:
@@ -101,10 +106,13 @@ class DataSource:
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
+		
 	def queryCleaner(self, fetchList):
+		
 		'''
 		queryCleaner is a helper method for cleaning cursor.fetchall() items and turning them into strings without tuple formatting.
 		'''
+		
 		length = len(fetchList)
 		for item in range(length):
 			s = str(fetchList[item])
