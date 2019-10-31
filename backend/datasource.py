@@ -92,6 +92,7 @@ class DataSource:
 			cursor = connection.cursor()
 			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
 			cursor.execute(query)
+			fetchList = []
 			fetchList = list(cursor.fetchall())
 			length = len(fetchlist)
 			for item in range(length):
