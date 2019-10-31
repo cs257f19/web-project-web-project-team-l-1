@@ -105,7 +105,7 @@ class DataSource:
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
-			fetchList = queryCleaner(self, fetchlist)
+			fetchList = self.queryCleaner(self, fetchlist)
 			return fetchList[0]
 		
 		except Exception as e:
