@@ -3,7 +3,7 @@ from datasource import *
 
 class DataSourceTester(unittest.TestCase):
     
-    def setUp(self) -> None:
+    def setUp(self) --> None:
 	self.connection = DataSource('yuez','glass944happy').tryConnect()
 
     def test_getDirectorByMovie(self):
