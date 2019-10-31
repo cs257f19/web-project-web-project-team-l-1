@@ -13,7 +13,7 @@ class DataSourceTester(unittest.TestCase):
 	
     def test_getDirectorByMovie_empty(self):
         title = 'Avatar'
-        self.assertEqual(self.movie.getDirectorByMovie(self.connection, title), "")
+        self.assertNotEqual(self.movie.getDirectorByMovie(self.connection, title), "")
 	
 if __name__ == "__main__":
 	unittest.main()
