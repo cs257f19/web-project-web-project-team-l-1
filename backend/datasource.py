@@ -151,11 +151,6 @@ def main():
 	if results is not None:
 		print("Query results: ")
 		for item in results:
-			s = str(item)
-			s = s.replace(',', '')
-			s = s.replace(')', '')
-			s = s.replace('(', '')
-			s = s.replace("'", '')
 			print(s)
 
 	# Disconnect from database
