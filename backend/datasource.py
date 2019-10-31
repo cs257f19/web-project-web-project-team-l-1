@@ -92,12 +92,14 @@ class DataSource:
 			cursor = connection.cursor()
 			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
 			cursor.execute(query)
-			s = str(cursor.fetchall())
-			s = s.replace(',', '')
-			s = s.replace(')', '')
-			s = s.replace('(', '')
-			s = s.replace("'", '')
-			return s
+			fetchList = cursor.fetchall()
+			for item in fetchList
+				s = str(item)
+				s = s.replace(',', '')
+				s = s.replace(')', '')
+				s = s.replace('(', '')
+				s = s.replace("'", '')
+			return fetchList
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
