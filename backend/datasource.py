@@ -140,7 +140,7 @@ def main():
 	if results is not None:
 		print("Query results: ")
 		for item in results:
-			print(item.strip(","))
+			print(item)
 
 	# Disconnect from database
 	connection.close()
