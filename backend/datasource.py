@@ -102,7 +102,6 @@ class DataSource:
 				s = s.replace('(', '')
 				s = s.replace("'", '')
 				fetchList[item] = s
-				print(item)
 			fetchTuple = tuple(fetchList)
 			return fetchTuple
 		except Exception as e:
