@@ -4,8 +4,7 @@ from datasource import *
 class DataSourceTester(unittest.TestCase):
     
     def setUp(self) -> None:
-        self.movie = DataSource('yuez', 'glass944happy')
-	self.connection = self.movie.tryConnect()
+	self.connection = DataSource('yuez','glass944happy').tryConnect()
 
     def test_getDirectorByMovie(self):
         title = 'Avatar'
