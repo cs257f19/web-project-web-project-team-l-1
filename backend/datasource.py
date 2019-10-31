@@ -81,7 +81,7 @@ class DataSource:
 			return None
 		
 	# quaryCleaner is a helper method for cleaning cursor.fetchall() items and turning them into strings without tuple formatting.
-	def queryCleaner(self, fetchList):
+	def queryCleaner(fetchList):
 		length = len(fetchList)
 		for item in range(length):
 			s = str(fetchList[item])
