@@ -102,9 +102,9 @@ class DataSource:
 				s = s.replace('(', '')
 				s = s.replace("'", '')
 				fetchList[item] = s
-			fetchTuple = tuple(fetchList)
-			print fetchTuple[0]
-			return fetchTuple
+			#fetchTuple = tuple(fetchList)
+			print fetchList[0]
+			return fetchList
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
