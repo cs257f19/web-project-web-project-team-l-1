@@ -141,9 +141,7 @@ def main():
 		print("Query results: ")
 		for item in results:
 			s = str(item)
-			
-			print('test string--' + s)
-			s = s.replace(',', '')
+			s = s.replace(',' and '(' and ')' and "'", '')
 			print(s)
 
 	# Disconnect from database
