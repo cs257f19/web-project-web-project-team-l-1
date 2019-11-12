@@ -1,5 +1,5 @@
 import flask
-from flas import render_template
+from flask import render_template
 import json
 import sys
 
