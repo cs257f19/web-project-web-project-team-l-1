@@ -3,13 +3,13 @@ from flask import render_template
 import json
 import sys
 
-app = flask.Flask(_name_)
+app = flask.Flask(__name__)
 
 @app.route('/')
 def displayHomepage():
 	return render_template('homepage1.html')
 	
-if _name_ == '_main_':
+if __name__ == '__main__':
 	if len(sys.argv) != 3:
 		print('Usage: {0} host post'.format(sys.argv[0]), file = sys.stderr)
 		exit()
