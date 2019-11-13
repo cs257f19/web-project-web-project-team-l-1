@@ -16,7 +16,7 @@ datasource = DataSource('yuez', 'glass944happy')
 def displayHomepage():
 	return render_template('homepage1.html')
 
-@app.route('/fruit')
+@app.route('/horror')
 def fruit():
     myFruit = datasource.getMoviesByGenre(connection, 'Horror')
 
