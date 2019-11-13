@@ -8,7 +8,7 @@ body {
     margin-right: auto;
 
   font-family: Arial, Helvetica, sans-serif;
-  background-image: zcurtain.jpg
+  background-image: url({{ url_for('static', filename='zcurtain.jpg') }})
 }
 
 a { color: #FFE9CF; text-decoration: none; }
