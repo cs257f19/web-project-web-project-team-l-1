@@ -1,7 +1,7 @@
 
 * {box-sizing: border-box;}
 page {
-background-image: url("http://fuliduoduo.top/wp-content/uploads/2019/08/used-theater-curtains-movie-curtain-fabric-opening-theatre-material.jpg");
+background-image: background-image: url({{ url_for('static', filename='zcurtain.jpg') }})
 }
 body {
     margin-left: auto;
