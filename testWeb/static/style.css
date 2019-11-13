@@ -1,13 +1,13 @@
-
+app = Flask(__name__, static_url_path='/static')
 * {box-sizing: border-box;}
 page {
-	background-image:  url("http://fuliduoduo.top/wp-content/uploads/2019/08/used-theater-curtains-movie-curtain-fabric-opening-theatre-material.jpg");
+	
 }
 body {
 	margin-left: auto;
 	margin-right: auto
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url("{{url_for('static', filename = 'zcurtain2.jpg')}}")
+	background-image: url({{ url_for('static', filename = 'zstarwars.jpg')}})
 }
 
 a { color: #FFE9CF; text-decoration: none; }
