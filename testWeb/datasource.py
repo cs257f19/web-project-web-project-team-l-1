@@ -33,7 +33,7 @@ class DataSource:
 	
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title FROM imdb_5000 WHERE genre1 = \'" + genre + "\' OR genre2 = \'" + genre + "\' OR genre3 = \'" + genre +"\'"
+			query = "SELECT title, vote_average FROM imdb_5000 WHERE genre1 = \'" + genre + "\' OR genre2 = \'" + genre + "\' OR genre3 = \'" + genre +"\' ORDER BY vote_average Desc"
 			cursor.execute(query)
 			return cursor.fetchall()	
 		except Exception as e:
