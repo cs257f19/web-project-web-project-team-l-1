@@ -24,7 +24,7 @@ def fruit():
                            fruits=myFruit)
 
 @app.route('/horror')
-def fruit():
+def horror():
     myMovies = datasource.getMoviesByGenre(connection, 'Horror')
 
     return render_template('horror.html',
