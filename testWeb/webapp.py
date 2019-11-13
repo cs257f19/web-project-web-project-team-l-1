@@ -28,7 +28,7 @@ def horror():
     myMovies = datasource.getMoviesByGenre(connection, 'Horror')
 
     return render_template('horror.html',
-                           movie= myMovies)
+                           movies= myMovies)
 
 	
 if __name__ == '__main__':
