@@ -58,6 +58,7 @@ class DataSource:
 			query = "SELECT title FROM imdb_5000 WHERE runtime > \'" + str(minRuntime) + "\' AND runtime < \'" + str(maxRuntime) + "\'"
 			cursor.execute(query)
 			return cursor.fetchall()
+		
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
@@ -80,7 +81,7 @@ class DataSource:
 			fetchList = []
 			fetchList = list(cursor.fetchall())
 			fetchList = self.queryCleaner(fetchList)
-			return fetchList[0]
+			return fetchList[]
 		
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
