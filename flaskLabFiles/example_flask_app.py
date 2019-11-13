@@ -35,6 +35,10 @@ def itDoesHTML():
 def boring():
     return render_template('boring.html')
 
+@app.route('/homepage/')
+def homepage():
+    return render_template('homepage1.html')
+
 @app.route('/greet/<person>/')
 def greet(person):
     return render_template('greet.html',
