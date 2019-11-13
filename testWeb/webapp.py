@@ -13,11 +13,7 @@ def displayHomepage():
 
 @app.route('/fruit')
 def fruit():
-    myFruit = [
-        {'name': 'apple', 'rating': 7},
-        {'name': 'banana', 'rating': 5},
-        {'name': 'pear', 'rating': 4}
-    ]
+    myFruit = datasource.getMoviesByGenre(connection, 'Horror')
 
     return render_template('fruit.html',
                            fruits=myFruit)
