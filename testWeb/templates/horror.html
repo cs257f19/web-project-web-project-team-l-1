@@ -17,17 +17,14 @@
 <!-- Black center sqaure box -->
 <div id = "bodyp" align = "center">
  <!-- Metadata text -->
-  <div class="paragraphs">
-
     {% block content %}
-     <table>
-        <tr><th>Title and Rating</th></tr>
-        {% for movie in movies %}
-            <tr><td>{{ movie }}</td></tr>
-        {% endfor %}
-     </table>
-     {% endblock %}        
-   </div>  
+    <table>
+       <tr><th>Title and Rating</th></tr>
+       {% for movie in movies %}
+           <tr><td>{{ movie }}</td></tr>
+       {% endfor %}
+    </table>
+    {% endblock %}        
 </div>
     
 <div class="footer">
