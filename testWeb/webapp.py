@@ -2,7 +2,6 @@ import flask
 from flask import render_template
 import json
 import sys
-sys.path.append('../')
 from datasource import *
 
 app = flask.Flask(__name__)
