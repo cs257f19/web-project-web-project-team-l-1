@@ -4,8 +4,13 @@ import json
 import sys
 from datasource import *
 
+
+
 app = flask.Flask(__name__)
 dataConnection = DataSource('yuez', 'glass944happy').tryConnect()
+datasource = DataSource('yuez', 'glass944happy')
+
+
 
 @app.route('/')
 def displayHomepage():
@@ -13,7 +18,7 @@ def displayHomepage():
 
 @app.route('/fruit')
 def fruit():
-    myFruit = dataConnection.getMoviesByGenre(connection, 'Horror')
+    myFruit = datasource.getMoviesByGenre(connection, 'Horror')
 
     return render_template('fruit.html',
                            fruits=myFruit)
