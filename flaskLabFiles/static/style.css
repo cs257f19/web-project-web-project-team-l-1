@@ -194,7 +194,7 @@ a:hover { text-decoration: underline; }
 }
 
 .footer {
-  position: relative;
+  position: bottom;
   font-size: 8px;
   left: 0;
   bottom: 0;
