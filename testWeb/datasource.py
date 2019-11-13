@@ -96,7 +96,7 @@ class DataSource:
 			Director name given a certain movie
 		'''
 	
-           	try:
+		try:
 			cursor = connection.cursor()
 			query = "SELECT director FROM imdb_5000 WHERE title = \'" + str(title) + "\'"
 			cursor.execute(query)
@@ -168,7 +168,7 @@ def main():
 	# results = datasource.getMoviesByLength(connection, 60, 90)
 	# results = datasource.getMoviesByGenre(connection, 'Horror')
 	results = datasource.getMoviesByVoteAverage(connection, 8.2)
-    	# results = datasource.getDirectorByMovie(connection, 'Avatar')
+	# results = datasource.getDirectorByMovie(connection, 'Avatar')
 	
 	if results is not None:
 		#for item in results:
