@@ -7,7 +7,7 @@ from datasource import *
 
 
 app = flask.Flask(__name__)
-dataConnection = DataSource('yuez', 'glass944happy').tryConnect()
+connection = DataSource('yuez', 'glass944happy').tryConnect()
 datasource = DataSource('yuez', 'glass944happy')
 
 
