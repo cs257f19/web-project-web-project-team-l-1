@@ -18,10 +18,15 @@
 <div id = "bodyp" align = "center">
  <!-- Metadata text -->
   <div class="paragraphs">
-        <h1>Top Rated Movies<br /></h1>
-            <h2>MOVIE</h2>
-            <p>Information </p>
-        
+
+    {% block content %}
+     <table>
+        <tr><th>Name</th><th>Rating</th></tr>
+        {% for fruit in fruits %}
+            <tr><td>{{ fruit }}</td><td>{{ fruit }}</td></tr>
+        {% endfor %}
+     </table>
+     {% endblock %}        
    </div>  
 </div>
     
