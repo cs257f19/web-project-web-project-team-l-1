@@ -5,7 +5,7 @@ import sys
 from datasource import *
 
 app = flask.Flask(__name__)
-Data = datasource()
+dataConnection = DataSource('yuez', 'glasshappy944').tryConnect()
 
 @app.route('/')
 def displayHomepage():
@@ -13,7 +13,7 @@ def displayHomepage():
 
 @app.route('/fruit')
 def fruit():
-    myFruit = Data.getMoviesByGenre(connection, 'Horror')
+    myFruit = dataConnection.getMoviesByGenre(connection, 'Horror')
 
     return render_template('fruit.html',
                            fruits=myFruit)
