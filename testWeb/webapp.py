@@ -5,7 +5,7 @@ import sys
 from datasource import *
 
 app = flask.Flask(__name__)
-dataConnection = DataSource('yuez', 'glasshappy944').tryConnect()
+dataConnection = DataSource('yuez', 'glass944happy').tryConnect()
 
 @app.route('/')
 def displayHomepage():
