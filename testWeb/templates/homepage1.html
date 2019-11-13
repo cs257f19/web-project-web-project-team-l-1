@@ -23,7 +23,7 @@
 <!--This section is to create a main section containing big movie poster and explanatory words at the center of this page.-->
 <div id = "bodyp" align = "center">
   <div class="container">
-   <img src="zstarwars.jpg" alt="starwars" width=100% height="100%" onclick="window.location.href = 'searchresults.html';">
+   <img src="{{ url_for('static', filename = 'zstarwars.css')}}" alt="starwars" width=100% height="100%" onclick="window.location.href = 'searchresults.html';">
    <div class="top-left">Find our most popular movies!</div>
    </div>
   <p>Navigate our website using a variety of catagories to find all your favorite movies!</p>
