@@ -78,10 +78,7 @@ class DataSource:
 			cursor = connection.cursor()
 			query = "SELECT title FROM imdb_5000 WHERE vote_average > \'" + str(vote_average) + "\' ORDER BY vote_average Desc"
 			cursor.execute(query)
-			fetchList = []
-			fetchList = list(cursor.fetchall())
-			fetchList = self.queryCleaner(fetchList)
-			return fetchList[]
+			return cursor.fetchall()
 		
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
