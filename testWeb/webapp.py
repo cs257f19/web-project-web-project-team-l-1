@@ -23,12 +23,22 @@ def fruit():
     return render_template('fruit.html',
                            fruits=myFruit)
 
+
+@app.route('/action')
+def action():
+    str x = 'WHERE genre1 = \'Action\' OR genre2 = \'Action\' OR genre3 = \'Action\''
+    myMovies = datasource.getMoviesByCategory(connection, x)
+
+    return render_template('generic.html',
+                           movies= myMovies)
+
 @app.route('/horror')
 def horror():
-    myMovies = datasource.getMoviesByGenre(connection, 'Horror')
+    myMovies = datasource.getMoviesByCategory(connection, 'Horror')
 
-    return render_template('horror.html',
+    return render_template('generic.html',
                            movies= myMovies)
+
 
 	
 if __name__ == '__main__':

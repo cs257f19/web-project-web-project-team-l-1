@@ -19,6 +19,31 @@ class DataSource:
 			print("Connection error: ", e)
 			exit()
 		return connection
+    
+;alksdfj;alksdjfa;skldfja;lksdfkladfsfdlffjdaads;klfja;lksdfj;asdfjlaksjdf;laksjdfl;kasjdf;lkajsdl;kfjakls;dfj;laksdjf;lkasdjf;lkasjdflka;djf;lasdjf;lkasdjfl;kasdjf  
+    
+    def getMoviesByCategory(self, connection, category):
+        '''
+		Retrieves all Movies with a certain category.
+		Parameters:
+			connection- the connection to the database
+			category- retrieve every movie with this category
+		Returns:
+			A collection of all movies with this category
+		'''		
+		try:
+			cursor = connection.cursor()
+			query = "SELECT title FROM imdb_5000 "+ category +"  ORDER BY vote_average Desc"
+			cursor.execute(query)
+			fetchList = []
+			fetchList = list(cursor.fetchall())
+			fetchList = self.queryCleaner(fetchList)
+			return fetchList	
+		except Exception as e:
+			print ("Something went wrong when executing the query: ", e)
+			return None
+        
+    
 
 	def getMoviesByGenre(self, connection, genre):	
 
