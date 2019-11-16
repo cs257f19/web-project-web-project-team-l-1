@@ -274,3 +274,90 @@ div.desc {
   top: 5px;
   left: 16px;
 }
+
+/*
+Search menu ------------------------------------------------------
+*/
+
+
+.dropdownButton {
+  background-color: darkred;
+  color: gold;
+  border-color: gold;
+  position: relative;
+   margin-left: 0;
+   margin-top: auto;
+   text-align: center;
+  border:outset;
+  padding: 5px 16px;
+  font-size: 17px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.menu {
+  position: fixed;
+  display: inline-block;
+  margin-left: 0px;
+  margin-top: 0;
+  color: gold; 
+  border: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  margin-left: 20px;
+  background-color: red;
+  align: center;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
+  border: 1px solid gold;
+
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: gold;
+  padding: none;
+  text-decoration: none;
+  display: block;
+  border: none;
+
+  padding: 5px;
+  text-align: left;
+}
+.MenuButton {
+  background-color: darkred;
+  color: gold;
+  border-color: gold;
+  position: relative;
+   margin-left: 0;
+   margin-top: auto;
+   text-align: center;
+  border:outset;
+  padding: 5px 16px;
+  font-size: 17px;
+}
+#bold
+{
+  background-color: darkred;border: none;box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: darkred;border: none;box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdownButton { border: inset;}
+/*
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.MenuButton:hover { border: inset;}
+/*
+Search menu end --------------------------------------------------------------
+*/
