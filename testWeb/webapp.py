@@ -31,7 +31,7 @@ def fruit():
 
 @app.route('/action')
 def action():
-    str x = 'WHERE genre1 = Action OR genre2 = Action OR genre3 = Action'
+    x = 'WHERE genre1 = Action OR genre2 = Action OR genre3 = Action'
     myMovies = datasource.getMoviesByCategory(connection, x)
 
     return render_template('generic.html',
