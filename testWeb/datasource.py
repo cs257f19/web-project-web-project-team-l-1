@@ -21,7 +21,8 @@ class DataSource:
 		return connection    
     
 	def getMoviesByCategory(self, connection, category):
-        	'''
+        
+        '''
 		Retrieves all Movies with a certain category.
 		Parameters:
 			connection- the connection to the database
@@ -29,6 +30,7 @@ class DataSource:
 		Returns:
 			A collection of all movies with this category
 		'''		
+        
 		try:
 			cursor = connection.cursor()
 			query = "SELECT title FROM imdb_5000 "+ category +"  ORDER BY vote_average Desc"
