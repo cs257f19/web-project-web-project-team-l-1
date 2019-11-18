@@ -28,6 +28,11 @@ def fruit():
     return render_template('fruit.html',
                            fruits=myFruit)
 
+@app.route('/about')
+def about():
+    return render_template('about.html',
+                           movies= myMovies)
+
 
 @app.route('/action')
 def action():
