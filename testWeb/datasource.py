@@ -18,9 +18,7 @@ class DataSource:
 		except Exception as e:
 			print("Connection error: ", e)
 			exit()
-		return connection
-    
-;alksdfj;alksdjfa;skldfja;lksdfkladfsfdlffjdaads;klfja;lksdfj;asdfjlaksjdf;laksjdfl;kasjdf;lkajsdl;kfjakls;dfj;laksdjf;lkasdjf;lkasjdflka;djf;lasdjf;lkasdjfl;kasdjf  
+		return connection    
     
     def getMoviesByCategory(self, connection, category):
         '''
