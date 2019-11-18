@@ -20,7 +20,7 @@ class DataSource:
 			exit()
 		return connection    
     
-    def getMoviesByCategory(self, connection, category):
+        def getMoviesByCategory(self, connection, category):
         '''
 		Retrieves all Movies with a certain category.
 		Parameters:
