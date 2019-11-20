@@ -58,7 +58,7 @@ class DataSource:
 	
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title, vote_average FROM imdb_5000 WHERE genre1 = \'" + genre + "\' OR genre2 = \'" + genre + "\' OR genre3 = \'" + genre +"\' ORDER BY vote_average Desc"
+			query = "SELECT title, vote_average FROM imdb_5000 WHERE genre1 = " + str(genre) + " OR genre2 = " + str(genre) + " OR genre3 = " + str(genre) + " ORDER BY vote_average Desc"
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
