@@ -185,12 +185,12 @@ def main():
 	Print out results of different methods
 	'''
 
-	user = 'yuez'
-	password = 'glass944happy'
-	datasource = DataSource(user, password)
+	#user = 'yuez'
+	#password = 'glass944happy'
+	#datasource = DataSource(user, password)
 
 	#Connect to database
-	connection = datasource.tryConnect()
+	#connection = datasource.tryConnect()
 	
 	# get list of movies in results
 	# results = datasource.getMoviesByLength(connection, 60, 90)
@@ -198,12 +198,12 @@ def main():
 	# results = datasource.getMoviesByVoteAverage(connection, 8.2)
 	# results = datasource.getDirectorByMovie(connection, 'Avatar')
 	
-	if results is not None:
+	#if results is not None:
 		#for item in results:
 		#	print(item)
-		print(results)
+	#	print(results)
 
 	# Disconnect from database
-	connection.close()
+	#connection.close()
 		
 main()
