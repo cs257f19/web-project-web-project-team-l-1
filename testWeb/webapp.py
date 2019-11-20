@@ -43,8 +43,8 @@ def action():
 
 @app.route('/horror')
 def horror():
-    myMovies = datasource.getMoviesByCategory(connection, 'Horror')
     x = 'WHERE genre1 = Horror OR genre2 = Horror OR genre3 = Horror'
+    myMovies = datasource.getMoviesByCategory(connection, x)
     return render_template('horror.html',
                            movies= myMovies)
 
