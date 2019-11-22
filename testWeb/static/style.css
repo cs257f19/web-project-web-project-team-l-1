@@ -341,6 +341,19 @@ Search menu ------------------------------------------------------
   padding: 3px 10px;
   font-size: 12px;
 }
+}
+.SubmitButton {
+  background-color: darkred;
+  color: gold;
+  position: relative;
+   margin-left: 0;
+   margin-top: auto;
+   text-align: center;
+  border:outset;
+  border-color: darkred;
+  padding: 5px 15px;
+  font-size: 17px;
+}
 #bold
 {
   background-color: darkred;border: none;box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
