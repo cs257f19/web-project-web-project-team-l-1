@@ -401,7 +401,7 @@ def zh():
 
 # Rating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating button
 @app.route('/rating')
-def zh():
+def rating():
     return x
 
 # New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button 
