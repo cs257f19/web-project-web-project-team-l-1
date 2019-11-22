@@ -131,7 +131,7 @@ def Romance():
     return x
 
 @app.route('/ScienceFiction')
-def Science Fiction():
+def ScienceFiction():
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Science Fiction\' OR genre2 = \'Science Fiction\' OR genre3 = \'Science Fiction\'"
