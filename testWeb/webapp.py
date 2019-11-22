@@ -145,7 +145,7 @@ def Thriller():
     return x
 
 @app.route('/TVMovie')
-def TV Movie():
+def TVMovie():
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'TV Movie\' OR genre2 = \'TV Movie\' OR genre3 = \'TV Movie\'"
