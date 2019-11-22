@@ -399,6 +399,19 @@ def zh():
     x = x + "language = \'zh\'"
     return x
 
+# Rating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating button
+@app.route('/rating')
+def zh():
+    return x
+
+# New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button 
+@app.route('/newreleases')
+def newreleases():
+    if x != '':
+        x = x + 'AND'
+    x = x + "release_date between \'1/1/2015\' and \'1/1/2020\'"
+    return x
+
 
 # SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button
 @app.route('/submit')
