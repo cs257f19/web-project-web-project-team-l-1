@@ -363,7 +363,7 @@ input:checked + .MenuButton {
 .dropdown:hover .dropdownButton { border: inset;border-color: gold;}
 /*
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.MenuButton:active { border: inset; border-color: gold;}
+.MenuButton:onclick { border: inset; border-color: gold;}
 
 /*
 Search menu end --------------------------------------------------------------
