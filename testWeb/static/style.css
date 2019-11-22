@@ -311,6 +311,7 @@ Search menu ------------------------------------------------------
   background-color: grey;
   align: center;
   min-width: 400px;
+  min-height: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
   border: 1px solid gold;
 
@@ -329,17 +330,16 @@ Search menu ------------------------------------------------------
   text-align: left;
 }
 .MenuButton {
-  background-color: darkred;
-  color: gold;
-  border-color: gold;
+  background-color: darkgrey;
+  color: black;
   position: relative;
    margin-left: 0;
    margin-top: auto;
    text-align: center;
   border:outset;
-  border-color: gold;
+  border-color: darkgrey;
   padding: 3px 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 #bold
 {
