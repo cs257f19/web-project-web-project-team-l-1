@@ -308,7 +308,7 @@ Search menu ------------------------------------------------------
   display: block;
   position: absolute;
   margin-left: 20px;
-  background-color: red;
+  background-color: grey;
   align: center;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
@@ -348,6 +348,11 @@ Search menu ------------------------------------------------------
   margin: 5px;
 }
 
+
+
+input:checked + .MenuButton {
+  background-color: #2196F3;
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: darkred;border: none;box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);}
 
@@ -355,10 +360,11 @@ Search menu ------------------------------------------------------
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropdownButton { border: inset;}
+.dropdown:hover .dropdownButton { border: inset;border-color: gold;}
 /*
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .MenuButton:active { border: inset; border-color: gold;}
+
 /*
 Search menu end --------------------------------------------------------------
 */
