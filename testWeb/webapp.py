@@ -64,7 +64,7 @@ def Comedy():
 def Crime():
     if x != '':
         x = x + 'AND'
-    x = x + a	"genre1 = \'Crime\' OR genre2 = \'Crime\' OR genre3 = \'Crime\'"
+    x = x + "genre1 = \'Crime\' OR genre2 = \'Crime\' OR genre3 = \'Crime\'"
     return x
 
 @app.route('/Documentary')
