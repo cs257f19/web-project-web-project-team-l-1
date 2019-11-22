@@ -260,7 +260,7 @@ def id():
     return x
 
 @app.route('/is')
-def is():
+def langis():
     if x != '':
         x = x + 'AND'
     x = x + "language = \'is\'"
