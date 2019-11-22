@@ -130,7 +130,7 @@ def Romance():
     x = x + "genre1 = \'Romance\' OR genre2 = \'Romance\' OR genre3 = \'Romance\'"
     return x
 
-@app.route('/Science Fiction')
+@app.route('/ScienceFiction')
 def Science Fiction():
     if x != '':
         x = x + 'AND'
@@ -144,7 +144,7 @@ def Thriller():
     x = x + "genre1 = \'Thriller\' OR genre2 = \'Thriller\' OR genre3 = \'Thriller\'"
     return x
 
-@app.route('/TV Movie')
+@app.route('/TVMovie')
 def TV Movie():
     if x != '':
         x = x + 'AND'
