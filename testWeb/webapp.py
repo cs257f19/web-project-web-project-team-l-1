@@ -14,7 +14,7 @@ x=''
 
 @app.route('/')
 def displayHomepage():
-	return render_template('homepage1.html')
+	return render_template('homepage.html')
 
 @app.route('/search')
 def displaySearch():
