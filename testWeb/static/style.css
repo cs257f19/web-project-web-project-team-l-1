@@ -337,6 +337,10 @@ Search menu ------------------------------------------------------
    margin-top: auto;
    text-align: center;
   border:outset;
+  border-color: gold;
+  padding: 5px 16px;
+  font-size: 17px;
+	
   padding: 5px 16px;
   font-size: 17px;
 }
@@ -357,7 +361,7 @@ Search menu ------------------------------------------------------
 .dropdown:hover .dropdownButton { border: inset;}
 /*
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.MenuButton:hover { border: inset;}
+.MenuButton:active { border: inset; border-color: gold;}
 /*
 Search menu end --------------------------------------------------------------
 */
