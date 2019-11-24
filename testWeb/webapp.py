@@ -470,8 +470,8 @@ def newreleases():
 def submit():
     global x
     myMovies = datasource.getMoviesByCategory(connection, x)
-    render_template('menuresults.html',movies= myMovies)
-    return render_template('homepage.html')
+    return render_template('menuresults.html',movies= myMovies)
+
     x=''
 	
 if __name__ == '__main__':
