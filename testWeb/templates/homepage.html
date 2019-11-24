@@ -91,7 +91,20 @@
     
     
 </div>
-<iframe src="{{ iframe }}", height="500" width="700" style="border-color:red; margin-left: 500px; overflow-horizontal: hidden; position: absolute;"></iframe>
+<div id = "bodyp" align = "center">
+ <!-- Metadata text -->
+      <table align = "center">
+         <tr align="left">
+         {% if movie != none %}
+            <tr><th>Title and Rating</th></tr>
+            {% for movie in movies %}
+            <tr><td>{{ movie }}</td></tr>
+            {% endfor %}
+         {% else %}
+            <tr><th>None Found</th></tr>
+         {% endif %}
+      </table>
+</div>
 </div>
 <div class="footer">
   <p>Made by Christopher Kitchen, Christian Heuchert and Zitian "James" Yue</p>
