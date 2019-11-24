@@ -29,10 +29,11 @@ def about():
 
 @app.route('/Horror')
 def Horror():
+    global x
     if x != '':
         x = x + 'AND'
     x =	x + "genre1 = \'Horror\' OR genre2 = \'Horror\' OR genre3 = \'Horror\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Action')
 def Action():
@@ -42,368 +43,418 @@ def Action():
 
 @app.route('/Adventure')
 def Adventure():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Adventure\' OR genre2 = \'Adventure\' OR genre3 = \'Adventure\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Animation')
 def Animation():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Animation\' OR genre2 = \'Animation\' OR genre3 = \'Animation\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Comedy')
 def Comedy():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Comedy\' OR genre2 = \'Comedy\' OR genre3 = \'Comedy\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Crime')
 def Crime():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Crime\' OR genre2 = \'Crime\' OR genre3 = \'Crime\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Documentary')
 def Documentary():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Documentary\' OR genre2 = \'Documentary\' OR genre3 = \'Documentary\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Drama')
 def Drama():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Drama\' OR genre2 = \'Drama\' OR genre3 = \'Drama\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Family')
 def Family():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Family\' OR genre2 = \'Family\' OR genre3 = \'Family\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Fantasy')
 def Fantasy():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Fantasy\' OR genre2 = \'Fantasy\' OR genre3 = \'Fantasy\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Foreign')
 def Foreign():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Foreign\' OR genre2 = \'Foreign\' OR genre3 = \'Foreign\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/History')
 def History():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'History\' OR genre2 = \'History\' OR genre3 = \'History\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Music')
 def Music():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Music\' OR genre2 = \'Music\' OR genre3 = \'Music\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Mystery')
 def Mystery():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Mystery\' OR genre2 = \'Mystery\' OR genre3 = \'Mystery\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Romance')
 def Romance():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Romance\' OR genre2 = \'Romance\' OR genre3 = \'Romance\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Science Fiction')
 def ScienceFiction():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Science Fiction\' OR genre2 = \'Science Fiction\' OR genre3 = \'Science Fiction\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Thriller')
 def Thriller():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Thriller\' OR genre2 = \'Thriller\' OR genre3 = \'Thriller\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/TV Movie')
 def TVMovie():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'TV Movie\' OR genre2 = \'TV Movie\' OR genre3 = \'TV Movie\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/War')
 def War():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'War\' OR genre2 = \'War\' OR genre3 = \'War\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Western')
 def Western():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "genre1 = \'Western\' OR genre2 = \'Western\' OR genre3 = \'Western\'"
-    return x
+    return render_template('homepage.html')
 
 
 #LanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguages
 
 @app.route('/af')
 def af():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'af\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/cn')
 def cn():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'cn\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/da')
 def da():
     if x != '':
         x = x + 'AND'
     x = x + "language = \'da\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/de')
 def de():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'de\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/el')
 def el():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'el\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/en')
 def en():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'en\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/es')
 def es():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'es\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/fa')
 def fa():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'fa\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/fr')
 def fr():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'fr\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/he')
 def he():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'he\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/hi')
 def hi():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'hi\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/hu')
 def hu():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'hu\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/id')
 def id():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'id\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/is')
 def langis():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'is\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/it')
 def it():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'it\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ja')
 def ja():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ja\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ko')
 def ko():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ko\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ky')
 def ky():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ky\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/nb')
 def nb():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'nb\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/nl')
 def nl():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'nl\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/pl')
 def pl():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'pl\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ps')
 def ps():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ps\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/pt')
 def pt():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'pt\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ro')
 def ro():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ro\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ru')
 def ru():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ru\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/sl')
 def sl():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'sl\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/sv')
 def sv():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'sv\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/ta')
 def ta():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'ta\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/te')
 def te():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'te\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/th')
 def th():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'th\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/tr')
 def tr():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'tr\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/vi')
 def vi():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'vi\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/zh')
 def zh():
+    global x
     if x != '':
         x = x + 'AND'
     x = x + "language = \'zh\'"
-    return x
+    return render_template('homepage.html')
 
 # Rating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating button
 @app.route('/rating')
 def rating():
-    return x
+    return render_template('homepage.html')
 
 # New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button 
 @app.route('/newreleases')
@@ -411,14 +462,16 @@ def newreleases():
     if x != '':
         x = x + 'AND'
     x = x + "release_date between \'1/1/2015\' and \'1/1/2020\'"
-    return x
+    return render_template('homepage.html')
 
 
 # SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button SUBMIT button
 @app.route('/submit')
 def submit():
+    global x
     myMovies = datasource.getMoviesByCategory(connection, x)
-    return render_template('menuresults.html',movies= myMovies)
+    render_template('menuresults.html',movies= myMovies)
+    return render_template('homepage.html')
     x=''
 	
 if __name__ == '__main__':
