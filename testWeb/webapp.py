@@ -472,7 +472,7 @@ def submit():
     myMovies = datasource.getMoviesByCategory(connection, x)
     print(x)
     x=''
-    return render_template('menuresults.html',movies= myMovies)
+    return render_template('homepage.html',movies= myMovies)
 
     
 	
