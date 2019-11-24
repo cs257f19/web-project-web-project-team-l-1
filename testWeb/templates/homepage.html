@@ -30,6 +30,20 @@
   <a href="#catagory3">Art Movies</a>
   <a href="#horror"onclick="window.location.href = '/horror';">Horror</a>
 </div>
+<div id = "bodyp" align = "center">
+ <!-- Metadata text -->
+      <table align = "center">
+         <tr align="left">
+         {% if movie != none %}
+            <tr><th>Title and Rating</th></tr>
+            {% for movie in movies %}
+            <tr><td>{{ movie }}</td></tr>
+            {% endfor %}
+         {% else %}
+            <tr><th>None Found</th></tr>
+         {% endif %}
+      </table>
+</div>
 <div class="menu">
           <div class="dropdown-content">
                 <div id = bold>Search by Rating</div>
@@ -99,20 +113,7 @@
     
     
 </div>
-<div id = "bodyp" align = "center">
- <!-- Metadata text -->
-      <table align = "center">
-         <tr align="left">
-         {% if movie != none %}
-            <tr><th>Title and Rating</th></tr>
-            {% for movie in movies %}
-            <tr><td>{{ movie }}</td></tr>
-            {% endfor %}
-         {% else %}
-            <tr><th>None Found</th></tr>
-         {% endif %}
-      </table>
-</div>
+
 
 <div class="footer">
   <p>Made by Christopher Kitchen, Christian Heuchert and Zitian "James" Yue</p>
