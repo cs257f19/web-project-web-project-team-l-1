@@ -454,6 +454,10 @@ def zh():
 # Rating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating button
 @app.route('/rating')
 def rating():
+    global x
+    if x != '':
+        x = x + 'AND'
+    x = x + "vote_average >= 7"
     return render_template('homepage.html')
 
 # New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button 
