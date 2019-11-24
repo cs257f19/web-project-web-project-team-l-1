@@ -9,7 +9,7 @@ from datasource import *
 app = flask.Flask(__name__)
 connection = DataSource('yuez', 'glass944happy').tryConnect()
 datasource = DataSource('yuez', 'glass944happy')
-global str(x)
+global x
 x =''
 
 
