@@ -476,7 +476,7 @@ def submit():
     myreleases = []
     mytaglines = []
     myoverviews = []
-    for movie in myMovies
+    for movie in myMovies:
         release, runtime, tagline, overview = datasource.getMovieInfo(connection, movie)
 	myreleases.append(release) 
 	myruntimes.append(runtime)
