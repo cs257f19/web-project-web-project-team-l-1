@@ -19,10 +19,14 @@
  <!-- Metadata text -->
       <table align = "center">
          <tr align="left">
-         <tr><th>Title and Rating</th></tr>
-         {% for movie in movies %}
+         {% if movie != none %}
+            <tr><th>Title and Rating</th></tr>
+            {% for movie in movies %}
             <tr><td>{{ movie }}</td></tr>
-         {% endfor %}
+            {% endfor %}
+         {% else %}
+            <tr><th>None Found</th></tr>
+         {% endif %}
       </table>
 </div>
     
