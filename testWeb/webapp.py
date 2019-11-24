@@ -8,7 +8,7 @@ app = flask.Flask(__name__)
 connection = DataSource('yuez', 'glass944happy').tryConnect()
 datasource = DataSource('yuez', 'glass944happy')
 x = ''
-iframe = '/about'
+iframe = 'http://perlman.mathcs.carleton.edu:5112/about'
 
 @app.route('/')
 def displayHomepage():
