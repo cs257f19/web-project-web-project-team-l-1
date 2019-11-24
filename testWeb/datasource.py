@@ -60,7 +60,7 @@ class DataSource:
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
-			fetchList = self.queryCleaner(fetchList)
+			#fetchList = self.queryCleaner(fetchList)
 			return fetchList	
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
