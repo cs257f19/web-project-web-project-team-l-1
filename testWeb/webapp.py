@@ -188,14 +188,14 @@ def Western():
     return render_template('homepage.html')
 
 
-#LanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguagesLanguages
+#ssssoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languagesoriginal_languages
 
 @app.route('/af')
 def af():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'af\'"
+    x = x + "original_language = \'af\'"
     return render_template('homepage.html')
 
 @app.route('/cn')
@@ -203,14 +203,14 @@ def cn():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'cn\'"
+    x = x + "original_language = \'cn\'"
     return render_template('homepage.html')
 
 @app.route('/da')
 def da():
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'da\'"
+    x = x + "original_language = \'da\'"
     return render_template('homepage.html')
 
 @app.route('/de')
@@ -218,7 +218,7 @@ def de():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'de\'"
+    x = x + "original_language = \'de\'"
     return render_template('homepage.html')
 
 @app.route('/el')
@@ -226,7 +226,7 @@ def el():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'el\'"
+    x = x + "original_language = \'el\'"
     return render_template('homepage.html')
 
 @app.route('/en')
@@ -234,7 +234,7 @@ def en():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'en\'"
+    x = x + "original_language = \'en\'"
     return render_template('homepage.html')
 
 @app.route('/es')
@@ -242,7 +242,7 @@ def es():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'es\'"
+    x = x + "original_language = \'es\'"
     return render_template('homepage.html')
 
 @app.route('/fa')
@@ -250,7 +250,7 @@ def fa():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'fa\'"
+    x = x + "original_language = \'fa\'"
     return render_template('homepage.html')
 
 @app.route('/fr')
@@ -258,7 +258,7 @@ def fr():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'fr\'"
+    x = x + "original_language = \'fr\'"
     return render_template('homepage.html')
 
 @app.route('/he')
@@ -266,7 +266,7 @@ def he():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'he\'"
+    x = x + "original_language = \'he\'"
     return render_template('homepage.html')
 
 @app.route('/hi')
@@ -274,7 +274,7 @@ def hi():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'hi\'"
+    x = x + "original_language = \'hi\'"
     return render_template('homepage.html')
 
 @app.route('/hu')
@@ -282,7 +282,7 @@ def hu():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'hu\'"
+    x = x + "original_language = \'hu\'"
     return render_template('homepage.html')
 
 @app.route('/id')
@@ -290,7 +290,7 @@ def id():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'id\'"
+    x = x + "original_language = \'id\'"
     return render_template('homepage.html')
 
 @app.route('/is')
@@ -298,7 +298,7 @@ def langis():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'is\'"
+    x = x + "original_language = \'is\'"
     return render_template('homepage.html')
 
 @app.route('/it')
@@ -306,7 +306,7 @@ def it():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'it\'"
+    x = x + "original_language = \'it\'"
     return render_template('homepage.html')
 
 @app.route('/ja')
@@ -314,7 +314,7 @@ def ja():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ja\'"
+    x = x + "original_language = \'ja\'"
     return render_template('homepage.html')
 
 @app.route('/ko')
@@ -322,7 +322,7 @@ def ko():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ko\'"
+    x = x + "original_language = \'ko\'"
     return render_template('homepage.html')
 
 @app.route('/ky')
@@ -330,7 +330,7 @@ def ky():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ky\'"
+    x = x + "original_language = \'ky\'"
     return render_template('homepage.html')
 
 @app.route('/nb')
@@ -338,7 +338,7 @@ def nb():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'nb\'"
+    x = x + "original_language = \'nb\'"
     return render_template('homepage.html')
 
 @app.route('/nl')
@@ -346,7 +346,7 @@ def nl():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'nl\'"
+    x = x + "original_language = \'nl\'"
     return render_template('homepage.html')
 
 @app.route('/pl')
@@ -354,7 +354,7 @@ def pl():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'pl\'"
+    x = x + "original_language = \'pl\'"
     return render_template('homepage.html')
 
 @app.route('/ps')
@@ -362,7 +362,7 @@ def ps():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ps\'"
+    x = x + "original_language = \'ps\'"
     return render_template('homepage.html')
 
 @app.route('/pt')
@@ -370,7 +370,7 @@ def pt():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'pt\'"
+    x = x + "original_language = \'pt\'"
     return render_template('homepage.html')
 
 @app.route('/ro')
@@ -378,7 +378,7 @@ def ro():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ro\'"
+    x = x + "original_language = \'ro\'"
     return render_template('homepage.html')
 
 @app.route('/ru')
@@ -386,7 +386,7 @@ def ru():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ru\'"
+    x = x + "original_language = \'ru\'"
     return render_template('homepage.html')
 
 @app.route('/sl')
@@ -394,7 +394,7 @@ def sl():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'sl\'"
+    x = x + "original_language = \'sl\'"
     return render_template('homepage.html')
 
 @app.route('/sv')
@@ -402,7 +402,7 @@ def sv():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'sv\'"
+    x = x + "original_language = \'sv\'"
     return render_template('homepage.html')
 
 @app.route('/ta')
@@ -410,7 +410,7 @@ def ta():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'ta\'"
+    x = x + "original_language = \'ta\'"
     return render_template('homepage.html')
 
 @app.route('/te')
@@ -418,7 +418,7 @@ def te():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'te\'"
+    x = x + "original_language = \'te\'"
     return render_template('homepage.html')
 
 @app.route('/th')
@@ -426,7 +426,7 @@ def th():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'th\'"
+    x = x + "original_language = \'th\'"
     return render_template('homepage.html')
 
 @app.route('/tr')
@@ -434,7 +434,7 @@ def tr():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'tr\'"
+    x = x + "original_language = \'tr\'"
     return render_template('homepage.html')
 
 @app.route('/vi')
@@ -442,7 +442,7 @@ def vi():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'vi\'"
+    x = x + "original_language = \'vi\'"
     return render_template('homepage.html')
 
 @app.route('/zh')
@@ -450,7 +450,7 @@ def zh():
     global x
     if x != '':
         x = x + 'AND'
-    x = x + "language = \'zh\'"
+    x = x + "original_language = \'zh\'"
     return render_template('homepage.html')
 
 # Rating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating button
