@@ -481,7 +481,7 @@ def submit():
 	myreleases.append(release) 
 	myruntimes.append(runtime)
 	mytaglines.append(tagline)
-	myoverviews.append(overview)
+	myoverviews.append(overview) 
     return render_template('homepage.html',movies= myMovies, runtimes = myruntimes, releases = myreleases, taglines = mytaglines, overviews = myoverviews)
 
     
