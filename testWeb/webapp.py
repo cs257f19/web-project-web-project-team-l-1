@@ -14,6 +14,8 @@ x = ''
 
 @app.route('/')
 def displayHomepage():
+	global x
+	x=''
 	return render_template('homepage.html')
 
 @app.route('/search')
@@ -474,9 +476,10 @@ def newreleases():
 def submit():
     global x
     myMovies = datasource.getMoviesByCategory(connection, x)
+    x=''
     return render_template('menuresults.html',movies= myMovies)
 
-    x=''
+    
 	
 if __name__ == '__main__':
 	if len(sys.argv) != 3:
