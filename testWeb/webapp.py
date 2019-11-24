@@ -476,7 +476,7 @@ def newreleases():
 def submit():
     global x
     myMovies = datasource.getMoviesByCategory(connection, x)
-	print(x)
+    print(x)
     x=''
     return render_template('menuresults.html',movies= myMovies)
 
