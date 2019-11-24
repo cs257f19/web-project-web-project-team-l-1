@@ -56,11 +56,12 @@ class DataSource:
         
 		try:
 			cursor = connection.cursor()
-			query = "SELECT title, release_date, runtime, tagline, genre1, genre2, genre3, overview FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
-			release = "SELECT release_date FROM imdb_5000 WHERE " + str(movie)
-			runtime = "SELECT runtime FROM imdb_5000 WHERE " + str(movie)
-			tagline = "SELECT release_date FROM tagline WHERE " + str(movie)
-			overview = "SELECT overview FROM imdb_5000 WHERE " + str(movie)
+			#query = "SELECT title, release_date, runtime, tagline, genre1, genre2, genre3, overview FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
+			release = "SELECT release_date FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			runtime = "SELECT runtime FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			tagline = "SELECT release_date FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			overview = "SELECT overview FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
