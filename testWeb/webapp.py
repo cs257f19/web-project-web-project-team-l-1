@@ -4,8 +4,6 @@ import json
 import sys
 from datasource import *
 
-
-
 app = flask.Flask(__name__)
 connection = DataSource('yuez', 'glass944happy').tryConnect()
 datasource = DataSource('yuez', 'glass944happy')
@@ -33,7 +31,7 @@ def about():
 def Horror():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x =	x + "genre1 = \'Horror\' OR genre2 = \'Horror\' OR genre3 = \'Horror\'"
     return render_template('homepage.html')
 
@@ -47,7 +45,7 @@ def Action():
 def Adventure():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Adventure\' OR genre2 = \'Adventure\' OR genre3 = \'Adventure\'"
     return render_template('homepage.html')
 
@@ -55,7 +53,7 @@ def Adventure():
 def Animation():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Animation\' OR genre2 = \'Animation\' OR genre3 = \'Animation\'"
     return render_template('homepage.html')
 
@@ -63,7 +61,7 @@ def Animation():
 def Comedy():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Comedy\' OR genre2 = \'Comedy\' OR genre3 = \'Comedy\'"
     return render_template('homepage.html')
 
@@ -71,7 +69,7 @@ def Comedy():
 def Crime():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Crime\' OR genre2 = \'Crime\' OR genre3 = \'Crime\'"
     return render_template('homepage.html')
 
@@ -79,7 +77,7 @@ def Crime():
 def Documentary():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Documentary\' OR genre2 = \'Documentary\' OR genre3 = \'Documentary\'"
     return render_template('homepage.html')
 
@@ -87,7 +85,7 @@ def Documentary():
 def Drama():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Drama\' OR genre2 = \'Drama\' OR genre3 = \'Drama\'"
     return render_template('homepage.html')
 
@@ -95,7 +93,7 @@ def Drama():
 def Family():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Family\' OR genre2 = \'Family\' OR genre3 = \'Family\'"
     return render_template('homepage.html')
 
@@ -103,7 +101,7 @@ def Family():
 def Fantasy():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Fantasy\' OR genre2 = \'Fantasy\' OR genre3 = \'Fantasy\'"
     return render_template('homepage.html')
 
@@ -111,7 +109,7 @@ def Fantasy():
 def Foreign():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Foreign\' OR genre2 = \'Foreign\' OR genre3 = \'Foreign\'"
     return render_template('homepage.html')
 
@@ -119,7 +117,7 @@ def Foreign():
 def History():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'History\' OR genre2 = \'History\' OR genre3 = \'History\'"
     return render_template('homepage.html')
 
@@ -127,7 +125,7 @@ def History():
 def Music():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Music\' OR genre2 = \'Music\' OR genre3 = \'Music\'"
     return render_template('homepage.html')
 
@@ -135,7 +133,7 @@ def Music():
 def Mystery():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Mystery\' OR genre2 = \'Mystery\' OR genre3 = \'Mystery\'"
     return render_template('homepage.html')
 
@@ -143,7 +141,7 @@ def Mystery():
 def Romance():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Romance\' OR genre2 = \'Romance\' OR genre3 = \'Romance\'"
     return render_template('homepage.html')
 
@@ -151,7 +149,7 @@ def Romance():
 def ScienceFiction():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Science Fiction\' OR genre2 = \'Science Fiction\' OR genre3 = \'Science Fiction\'"
     return render_template('homepage.html')
 
@@ -159,7 +157,7 @@ def ScienceFiction():
 def Thriller():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Thriller\' OR genre2 = \'Thriller\' OR genre3 = \'Thriller\'"
     return render_template('homepage.html')
 
@@ -167,7 +165,7 @@ def Thriller():
 def TVMovie():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'TV Movie\' OR genre2 = \'TV Movie\' OR genre3 = \'TV Movie\'"
     return render_template('homepage.html')
 
@@ -175,7 +173,7 @@ def TVMovie():
 def War():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'War\' OR genre2 = \'War\' OR genre3 = \'War\'"
     return render_template('homepage.html')
 
@@ -183,7 +181,7 @@ def War():
 def Western():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "genre1 = \'Western\' OR genre2 = \'Western\' OR genre3 = \'Western\'"
     return render_template('homepage.html')
 
@@ -194,7 +192,7 @@ def Western():
 def af():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'af\'"
     return render_template('homepage.html')
 
@@ -202,14 +200,15 @@ def af():
 def cn():
     global x
     if x != '':
-        x = x + 'AND '
-    x = x + "original_language = \'cn\'"
+        x = x + ' AND '
+    x = x + "original_language = \'cn\' OR original_language = \'zh\'"
     return render_template('homepage.html')
 
 @app.route('/da')
 def da():
+    global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'da\'"
     return render_template('homepage.html')
 
@@ -217,7 +216,7 @@ def da():
 def de():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'de\'"
     return render_template('homepage.html')
 
@@ -225,7 +224,7 @@ def de():
 def el():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'el\'"
     return render_template('homepage.html')
 
@@ -233,7 +232,7 @@ def el():
 def en():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'en\'"
     return render_template('homepage.html')
 
@@ -241,7 +240,7 @@ def en():
 def es():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'es\'"
     return render_template('homepage.html')
 
@@ -249,7 +248,7 @@ def es():
 def fa():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'fa\'"
     return render_template('homepage.html')
 
@@ -257,7 +256,7 @@ def fa():
 def fr():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'fr\'"
     return render_template('homepage.html')
 
@@ -265,7 +264,7 @@ def fr():
 def he():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'he\'"
     return render_template('homepage.html')
 
@@ -273,7 +272,7 @@ def he():
 def hi():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'hi\'"
     return render_template('homepage.html')
 
@@ -281,7 +280,7 @@ def hi():
 def hu():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'hu\'"
     return render_template('homepage.html')
 
@@ -289,7 +288,7 @@ def hu():
 def id():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'id\'"
     return render_template('homepage.html')
 
@@ -297,7 +296,7 @@ def id():
 def langis():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'is\'"
     return render_template('homepage.html')
 
@@ -305,7 +304,7 @@ def langis():
 def it():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'it\'"
     return render_template('homepage.html')
 
@@ -313,7 +312,7 @@ def it():
 def ja():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ja\'"
     return render_template('homepage.html')
 
@@ -321,7 +320,7 @@ def ja():
 def ko():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ko\'"
     return render_template('homepage.html')
 
@@ -329,7 +328,7 @@ def ko():
 def ky():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ky\'"
     return render_template('homepage.html')
 
@@ -337,7 +336,7 @@ def ky():
 def nb():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'nb\'"
     return render_template('homepage.html')
 
@@ -345,7 +344,7 @@ def nb():
 def nl():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'nl\'"
     return render_template('homepage.html')
 
@@ -353,7 +352,7 @@ def nl():
 def pl():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'pl\'"
     return render_template('homepage.html')
 
@@ -361,7 +360,7 @@ def pl():
 def ps():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ps\'"
     return render_template('homepage.html')
 
@@ -369,7 +368,7 @@ def ps():
 def pt():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'pt\'"
     return render_template('homepage.html')
 
@@ -377,7 +376,7 @@ def pt():
 def ro():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ro\'"
     return render_template('homepage.html')
 
@@ -385,7 +384,7 @@ def ro():
 def ru():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ru\'"
     return render_template('homepage.html')
 
@@ -393,7 +392,7 @@ def ru():
 def sl():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'sl\'"
     return render_template('homepage.html')
 
@@ -401,7 +400,7 @@ def sl():
 def sv():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'sv\'"
     return render_template('homepage.html')
 
@@ -409,7 +408,7 @@ def sv():
 def ta():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'ta\'"
     return render_template('homepage.html')
 
@@ -417,7 +416,7 @@ def ta():
 def te():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'te\'"
     return render_template('homepage.html')
 
@@ -425,7 +424,7 @@ def te():
 def th():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'th\'"
     return render_template('homepage.html')
 
@@ -433,7 +432,7 @@ def th():
 def tr():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'tr\'"
     return render_template('homepage.html')
 
@@ -441,24 +440,17 @@ def tr():
 def vi():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "original_language = \'vi\'"
     return render_template('homepage.html')
 
-@app.route('/zh')
-def zh():
-    global x
-    if x != '':
-        x = x + 'AND '
-    x = x + "original_language = \'zh\'"
-    return render_template('homepage.html')
 
 # Rating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating buttonRating button
 @app.route('/rating')
 def rating():
     global x
     if x != '':
-        x = x + 'AND '
+        x = x + ' AND '
     x = x + "vote_average >= 7"
     return render_template('homepage.html')
 
@@ -466,8 +458,8 @@ def rating():
 @app.route('/newreleases')
 def newreleases():
     if x != '':
-        x = x + 'AND '
-    x = x + "release_date between \'1/1/2015\' AND  \'1/1/2020\'"
+        x = x + ' AND '
+    x = x + "release_date between \'1/1/2015\'  AND  \'1/1/2020\'"
     return render_template('homepage.html')
 
 
