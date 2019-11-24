@@ -38,6 +38,8 @@ def Horror():
 @app.route('/Action')
 def Action():
     global x
+    if x != '':
+        x = x + ' AND '
     x =	x + "genre1 = \'Action\' OR genre2 = \'Action\' OR genre3 = \'Action\'"
     return render_template('homepage.html')
 
