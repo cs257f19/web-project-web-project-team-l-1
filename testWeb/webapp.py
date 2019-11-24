@@ -9,8 +9,7 @@ from datasource import *
 app = flask.Flask(__name__)
 connection = DataSource('yuez', 'glass944happy').tryConnect()
 datasource = DataSource('yuez', 'glass944happy')
-global x
-x =''
+x = ''
 
 
 @app.route('/')
@@ -37,6 +36,7 @@ def Horror():
 
 @app.route('/Action')
 def Action():
+    global x
     x =	x + "genre1 = \'Action\' OR genre2 = \'Action\' OR genre3 = \'Action\'"
     return render_template('homepage.html')
 
