@@ -37,7 +37,7 @@ def Horror():
 @app.route('/Action')
 def Action():
     x =	x + "genre1 = \'Action\' OR genre2 = \'Action\' OR genre3 = \'Action\'"
-    return x
+    return render_template('homepage.html')
 
 @app.route('/Adventure')
 def Adventure():
