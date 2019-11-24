@@ -30,6 +30,7 @@
             <tr><th>Title and Rating</th></tr>
             {% for movie in movies %}
             <tr><td>{{ movie }}</td></tr>
+            <button> {{movie}} </button>
             {% endfor %}
          {% else %}
             <tr><th>None Found</th></tr>
