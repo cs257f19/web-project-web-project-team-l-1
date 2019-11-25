@@ -26,7 +26,7 @@
  <!-- Metadata text -->
       <table align = "center">
          <tr align="left">
-         {% if movie != none %}
+         {% if loop_length is defined %}
             <tr><th>Title and Rating</th></tr>
           {% for i in range(loop_length) %}
           <tr><button class = "BoldButton" hover = "show()"> {{movies[i]}} </button></tr>
