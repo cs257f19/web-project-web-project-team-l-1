@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!--This section is to set up this page and reference corresponding style sheet in form of css file.-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    
+<!--This section is to create a big header at the top center of this page.-->
+<div id ="header"><h1>&#9733 GoldStar Movies &#9733 </h1></div>
+    
+<!--This section is to create the navigation bar and a search bar at the top of this page.-->
+<div class="topnav">
+   <a class="active" href="#home" onclick="window.location.href = 'homepage1.html';">Home</a>
+  <a href="#about"onclick="window.location.href = '/about';">About</a>
+  <a href="#contact">Contact</a>
+    
+  <button id = "searchbutton" onclick="window.location.href = 'searchresults.html';">&#x1F50D</button>
+  <input type="text" placeholder=" &#9733 Search Movies &#9733" style: background-color: "#262626">
+</div>
+
+<!--This section is to create a main section containing big movie poster and explanatory words at the center of this page.-->
+<div id = "bodyp" align = "center">
+  <div class="container">
+   <img src="{{ url_for('static', filename = 'zstarwars.jpg')}}" alt="starwars" width=100% height="100%" onclick="window.location.href = 'searchresults.html';">
+   <div class="top-left">Find our most popular movies!</div>
+   </div>
+  <p>Navigate our website using a variety of catagories to find all your favorite movies!</p>
+ 
+<!--This section is to create a side bar showing catagory of movies at the left of this page right under the navigation bar-->
+<div class="sidenavLeft">
+    <div id="header2">All Catagories</div>
+  <a href="#catagory1">title</a>
+  <a href="#catagory2">cast</a>
+  <a href="#catagory3">crew</a>
+  <a href="#catagory4">budget</a>
+  <a href="#catagory5">genre</a>
+  <a href="#catagory6">website</a>
+  <a href="#catagory7">keywords</a>
+  <a href="#catagory8">language</a>
+  <a href="#catagory9">summary</a>
+  <a href="#catagory10">popularity</a>
+  <a href="#catagory11">production company</a>
+  <a href="#catagory12">release date</a>
+  <a href="#catagory13">revenue</a>
+  <a href="#catagory14">runtime</a>
+  <a href="#catagory15">available language</a>
+  <a href="#catagory16">status</a>
+  <a href="#catagory17">tagline title</a>
+  <!--<a href="#catagory18">vote rating</a>-->
+  <a href="#vote rating"onclick="window.location.href = 'voterating.html';">vote rating</a>
+  <a href="#contact">Contact</a>
+  <a href="#catagory19">vote count</a>  
+</div>
+
+<!--This section is to create a side bar showing popular genres at the right of this page right under the search bar.-->
+<div class="sidenav">
+    <div id="header2">Popular Genres!</div>
+    
+  <a href="#catagory1">Science Fiction</a>
+  <a href="#catagory2" onclick="window.location.href = 'searchresults.html';">Action</a>
+  <a href="#catagory3">Art Movies</a>
+  <a href="#horror"onclick="window.location.href = '/horror';">Horror</a>
+</div>
+
+<!--This section is to create a side bar showing hot talks about movies on reddit at the right of this page right under the popular genres bar.-->
+ <div class="sidenav2">
+    <script src='https://redditjs.com/post.js' data-url='https://www.reddit.com/r/movies/' data-height= '300' data-width='300' data-theme='dark' data-show-submit='true'></script>
+</div>
+
+<!--This section is to create a footer showing developer of this page at the bottom of this page.-->
+</div>
+<div class="footer">
+  <p>Made by Christopher Kitchen, Christian Heuchert and Zitian "James" Yue</p>
+</div>
+
+
+
+</body>
+</html>
