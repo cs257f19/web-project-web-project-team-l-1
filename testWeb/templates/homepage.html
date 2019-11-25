@@ -28,10 +28,12 @@
          <tr align="left">
          {% if movie != none %}
             <tr><th>Title and Rating</th></tr>
-            {% for movie in movies %}
-            <button class = "BoldButton" hover = "show()"> {{movie}} </button>
-            <div id = "movieDropdown"> {{runtimes.movie}} </div>
-            {% endfor %}
+          {% for movie in movies %}
+          <tr><button class = "BoldButton" hover = "show()"> {{movie}} </button></tr>
+          {% endfor %}
+          {% for runtime in runtimes %}
+          <tr><div id = "movieDropdown"> {{runtime}} </div></tr>
+
          {% else %}
             <tr><th>None Found</th></tr>
          {% endif %}
