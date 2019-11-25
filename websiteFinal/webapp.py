@@ -459,6 +459,7 @@ def rating():
 # New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button  New Releases button 
 @app.route('/newreleases')
 def newreleases():
+    global x
     if x != '':
         x = x + ' AND '
     x = x + "(release_date between \'1/1/2015\'  AND  \'1/1/2020\')"
