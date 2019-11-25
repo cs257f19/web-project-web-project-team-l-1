@@ -47,19 +47,19 @@
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">1 / 3</div>
-		<img src = "starWar.jpg" style = "width: 100%; height: 550px;">
+		<img src = {{ url_for('static', filename = 'zstarwars.jpg')}}" style = "width: 100%; height: 550px;">
 		<div class = "text">Star War</div>
 	</div>
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">2 / 3</div>
-		<img src = "WaterFall.jpg" style = "width: 100%; height: 550px;">
+		<img src = "{{ url_for('static', filename = 'WaterFall.jpg')}}" style = "width: 100%; height: 550px;">
 		<div class = "text">Carleton Waterfall</div>
 	</div>
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">3 / 3</div>
-		<img src = "BaldSpot.jpg" style = "width: 100%; height: 550px;">
+		<img src = "{{ url_for('static', filename = 'BaldSpot.jpg')}}.jpg" style = "width: 100%; height: 550px;">
 		<div class = "text">Carleton Bald Spot</div>
 	</div>
 	
