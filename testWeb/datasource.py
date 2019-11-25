@@ -19,7 +19,8 @@ class DataSource:
 			print("Connection error: ", e)
 			exit()
 		return connection    
-    
+   
+
 	def getMoviesByCategory(self, connection, category):
         
 		'''
@@ -33,12 +34,19 @@ class DataSource:
         
 		try:
 			cursor = connection.cursor()
+			#Titles
 			query = "SELECT title FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
 			fetchList = self.queryCleaner(fetchList)
-			return fetchList	
+			#Info 
+			query = "SELECT runtime FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
+			cursor.execute(query)
+			runtimes = []
+			runtimes = list(cursor.fetchall())
+			    #No Cleaner
+			return fetchList, runtimes
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
