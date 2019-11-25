@@ -473,6 +473,12 @@ def submit():
     print(x)
     x=''
     return render_template('homepage.html',movies= myMovies)
+# info info info info info
+@app.route('/getTime')
+def getTime():
+    runtime = datasource.getMoviesByCategory(connection, movie, "runtime")
+    print(runtime)
+    return render_template('homepage.html',runtime)
 
     
 	
