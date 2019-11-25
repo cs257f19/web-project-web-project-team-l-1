@@ -399,5 +399,5 @@ Search menu end --------------------------------------------------------------
   font-size: 17px;
 }
 
-.BoldButton:hover {background-color: grey;border: none;box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);}
+.BoldButton:hover {border: none;box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);}
 
