@@ -32,7 +32,7 @@
           {% for i in range(loop_length) %}
           <tr><button class = "BoldButton" hover = "show()"> {{movies[i]}} </button></tr>
           <tr><div id = "movieDropdown"> {{taglines[i]}} </div></tr>
-          <tr><div id = "movieDropdown"> runtime: {{runtimes[i]}} release date: {{releases[i]}} </div></tr>
+          <tr><div id = "movieDropdown"> runtime: {{releases[i]}} min</div></tr>
           <tr><div id = "movieDropdown"> {{overviews[i]}} </div></tr>
           {% endfor %}
          {% else %}
