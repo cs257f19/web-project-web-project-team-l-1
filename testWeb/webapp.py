@@ -472,17 +472,7 @@ def submit():
     myMovies = datasource.getMoviesByCategory(connection, x)
     print(x)
     x=''
-    myruntimes = []
-    myreleases = []
-    mytaglines = []
-    myoverviews = []
-    for movie in myMovies:
-        release, runtime, tagline, overview = datasource.getMovieInfo(connection, movie)
-        myreleases.append(release)
-        myruntimes.append(runtime)
-        mytaglines.append(tagline)
-        myoverviews.append(overview)
-    return render_template('homepage.html',movies= myMovies, runtimes = myruntimes, releases = myreleases, taglines = mytaglines, overviews = myoverviews)
+    return render_template('homepage.html',movies= myMovies)
 
     
 	
