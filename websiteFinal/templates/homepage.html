@@ -32,13 +32,13 @@
           {% for i in range(loop_length) %}
           <tr><button class = "BoldButton" hover = "show()"> {{movies[i]}} </button></tr>
           {% if taglines[i] is defined %}
-          <tr><div id = "movieDropdown"> {{taglines[i]}} </div></tr>
+          <tr><div id = "movieDropdown"> tagline: {{taglines[i]}} </div></tr>
           {% endif %}
           {% if releases[i] is defined %}
           <tr><div id = "movieDropdown"> runtime: {{releases[i]}} min</div></tr>
           {% endif %}
           {% if overviews[i] is defined %}
-          <tr><div id = "movieDropdown"> {{overviews[i]}} </div></tr>
+          <tr><div id = "movieDropdown"> description: {{overviews[i]}} </div></tr>
           {% endif %}
           {% endfor %}
          {% else %}
