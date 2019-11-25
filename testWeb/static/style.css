@@ -5,9 +5,10 @@ page {
 }
 body {
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 	font-family: Arial, Helvetica, sans-serif;
-	background-image: url(zcurtain2.jpg)
+	background-image: url(zcurtain2.jpg);
+	background-attachment: fixed;
 }
 
 a { color: #FFE9CF; text-decoration: none; }
@@ -36,6 +37,15 @@ a:hover { text-decoration: underline; }
 	position: center;
 	border: 3px solid #FFD700;
 }
+
+#header {
+    color: gold;
+    text-align: center;
+    top:0px;
+    font-size: 30px;
+	font-family: Comic Sans MS;
+}
+
 #header2 {
         color: gold;
     text-align: center;
@@ -43,33 +53,127 @@ a:hover { text-decoration: underline; }
     font-size: 30px;
 }
 
-.topnav {
-  overflow: hidden;
-  padding-bottom: 5px;
-      margin-left: auto;
-    margin-right: auto;
+.topnav{
+	position: relative;
+	margin-top: -2%;
 }
 
-.topnav a {
+.topnav li{
   float: left;
-  display: block;
   color: gold;
   text-align: center;
-  border:outset;
-  padding: 5px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  padding: 13px 30px;
+  font-size: 150%;
+  font-family: Comic Sans MS;
+  list-style-type: none;
 }
 
-.topnav a:hover {
-  background-color: darkgrey;
+.topnav a.nav-link:hover {
   color: yellow;
   border: outset;
 }
 
-.topnav a.active {
+.topnav a.nav-link:active {
   color: gold;
 }
+
+.side{
+	font-size: 380%;
+	color: gold;
+	font-family: Comic Sans MS;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.left{
+	margin-top: 10%;
+	margin-left: -80%;
+}
+
+.right{
+	margin-top: -27%;
+	margin-right: -80%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-top: -28%;
+  margin-left: 20%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 .topnav input[type=text] {
   float: right;
