@@ -30,7 +30,7 @@
             <tr><th>Title and Rating</th></tr>
             {% for movie in movies %}
             <button class = "BoldButton" hover = "show()"> {{movie}} </button>
-            <div id = "movieDropdown"> hello! </div>
+            <div id = "movieDropdown"> {{runtimes.movie}} </div>
             {% endfor %}
          {% else %}
             <tr><th>None Found</th></tr>
