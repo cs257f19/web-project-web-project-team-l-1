@@ -41,13 +41,33 @@ class DataSource:
 			fetchList = list(cursor.fetchall())
 			fetchList = self.queryCleaner(fetchList)
 			#Info 
-			query = "SELECT runtime FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
+			     #runtimes
+			query = "SELECT release_date FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
 			cursor.execute(query)
 			runtimes = []
-			print(runtimes)
 			runtimes = list(cursor.fetchall())
-			    #No Cleaner
-			return fetchList, runtimes
+			runtimes = self.queryCleaner(runtimes)
+			    #releases
+			query = "SELECT runtime FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
+			cursor.execute(query)
+			releases = []
+			releases = list(cursor.fetchall())
+			releases = self.queryCleaner(releases)
+			   #taglines
+			query = "SELECT tagline FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
+			cursor.execute(query)
+			taglines = []
+			taglines = list(cursor.fetchall())
+			taglines = self.queryCleaner(taglines)
+			    #overviews
+			query = "SELECT overview FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
+			cursor.execute(query)
+			overviews = []
+			overviews = list(cursor.fetchall())
+			overviews = self.queryCleaner(overviews)
+			#loop_length(for html)
+			Length = len(fetchList)*5	
+			return fetchList, runtimes, releases, taglines, overviews, Length
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
@@ -179,6 +199,7 @@ class DataSource:
 			s = s.replace("'", '')
 			fetchList[item] = s
 		return fetchList
+	
             
             
 	'''
