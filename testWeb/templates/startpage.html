@@ -16,13 +16,13 @@
 <div class = "topnav">
 	<ul class = "navbar-nav">
 		<li class = "nav-item active">
-			<a class = "nav-link" href = "startpage.html" onclick="window.location.href = '/';">Home</a>
+			<a class = "nav-link" onclick="window.location.href = '/';">Home</a>
 		</li>
 		<li class = "nav-item">
-			<a class = "nav-link" href = "about.html" onclick="window.location.href = '/about';">About</a>
+			<a class = "nav-link" onclick="window.location.href = '/about';">About</a>
 		</li>
 		<li class = "nav-item">
-			<a class = "nav-link" href = "search.html" onclick="window.location.href = '/search';">Search</a>
+			<a class = "nav-link" onclick="window.location.href = '/search';">Search</a>
 		</li>
 		<li class = "nav-item">
 			<a class = "nav-link disabled" href = "#">WIP</a>
@@ -47,7 +47,7 @@
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">1 / 3</div>
-		<img src = {{ url_for('static', filename = 'starWar.jpg')}}" style = "width: 100%; height: 550px;" onclick="window.location.href = '/search';">
+		<img src = {{ url_for('static', filename = 'starWar.jpg')}} style = "width: 100%; height: 550px;" onclick="window.location.href = '/search';">
 		<div class = "text" onclick="window.location.href = '/search';">Star War</div>
 	</div>
 	
