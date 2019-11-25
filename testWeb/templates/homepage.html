@@ -31,7 +31,9 @@
             <tr><th>Title and Rating</th></tr>
           {% for i in range(loop_length) %}
           <tr><button class = "BoldButton" hover = "show()"> {{movies[i]}} </button></tr>
-          <tr><div id = "movieDropdown"> {{runtimes[i]}} </div></tr>
+          <tr><div id = "movieDropdown"> {{taglines[i]}} </div></tr>
+          <tr><div id = "movieDropdown"> runtime: {{runtimes[i]}} release date: {{releases[i]}} </div></tr>
+          <tr><div id = "movieDropdown"> {{overviews[i]}} </div></tr>
           {% endfor %}
          {% else %}
          <tr><th>None Found</th></tr>
