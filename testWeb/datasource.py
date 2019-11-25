@@ -44,6 +44,7 @@ class DataSource:
 			query = "SELECT runtime FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
 			cursor.execute(query)
 			runtimes = []
+			print(runtimes)
 			runtimes = list(cursor.fetchall())
 			    #No Cleaner
 			return fetchList, runtimes
