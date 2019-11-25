@@ -66,7 +66,7 @@ class DataSource:
 			overviews = list(cursor.fetchall())
 			overviews = self.queryCleaner(overviews)
 			#loop_length(for html)
-			Length = len(fetchList)*5	
+			Length = len(fetchList)	
 			return fetchList, runtimes, releases, taglines, overviews, Length
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
