@@ -43,30 +43,20 @@ class DataSource:
 			print ("Something went wrong when executing the query: ", e)
 			return None
 		
-	def getMovieInfo(self, connection, movie):
-        
-		'''
-		Retrieves all Movies with a certain category.
-		Parameters:
-			connection- the connection to the database
-			category- retrieve every movie with this category
-		Returns:
-			A collection of all movies with this category
-		'''		
-        
+	def getMovieInfo(self, connection, movie, info):
 		try:
 			cursor = connection.cursor()
 			#query = "SELECT title, release_date, runtime, tagline, genre1, genre2, genre3, overview FROM imdb_5000 WHERE " + str(category) + " ORDER BY vote_average Desc"
-			release = "SELECT release_date FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
-			runtime = "SELECT runtime FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
-			tagline = "SELECT release_date FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
-			overview = "SELECT overview FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			myInfo = "SELECT " + info + " FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			#runtime = "SELECT runtime FROM imdb_5000 WHERE title  = '" + str(movie) + "'"
+			
 			
 			cursor.execute(query)
 			fetchList = []
 			fetchList = list(cursor.fetchall())
 			#fetchList = self.queryCleaner(fetchList)
-			return release, runtime, tagline, overview
+			print(myInfo)
+			return myInfo
 		except Exception as e:
 			print ("Something went wrong when executing the query: ", e)
 			return None
