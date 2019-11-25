@@ -28,14 +28,12 @@
          <tr align="left">
          {% if movie != none %}
             <tr><th>Title and Rating</th></tr>
-          {% for movie in movies %}
-          <tr><button class = "BoldButton" hover = "show()"> {{movie}} </button></tr>
-          {% endfor %}
-          {% for runtime in runtimes %}
-          <tr><div id = "movieDropdown"> {{runtime}} </div></tr>
+          {% for count in loop_length %}
+          <tr><button class = "BoldButton" hover = "show()"> {{movies[count]}} </button></tr>
+          <tr><div id = "movieDropdown"> {{runtimes[count]}} </div></tr>
           {% endfor %}
          {% else %}
-            <tr><th>None Found</th></tr>
+         <tr><th>None Found</th></tr>
          {% endif %}
       </table>
 </div>
