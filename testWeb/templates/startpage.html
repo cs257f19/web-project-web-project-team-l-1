@@ -16,13 +16,13 @@
 <div class = "topnav">
 	<ul class = "navbar-nav">
 		<li class = "nav-item active">
-			<a class = "nav-link" href = "startpage.html">Home</a>
+			<a class = "nav-link" href = "startpage.html" onclick="window.location.href = '/';">Home</a>
 		</li>
 		<li class = "nav-item">
-			<a class = "nav-link" href = "about.html">About</a>
+			<a class = "nav-link" href = "about.html" onclick="window.location.href = '/about';">About</a>
 		</li>
 		<li class = "nav-item">
-			<a class = "nav-link" href = "search.html">Search</a>
+			<a class = "nav-link" href = "search.html" onclick="window.location.href = '/search';">Search</a>
 		</li>
 		<li class = "nav-item">
 			<a class = "nav-link disabled" href = "#">WIP</a>
@@ -47,20 +47,20 @@
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">1 / 3</div>
-		<img src = {{ url_for('static', filename = 'zstarwars.jpg')}}" style = "width: 100%; height: 550px;">
-		<div class = "text">Star War</div>
+		<img src = {{ url_for('static', filename = 'zstarwars.jpg')}}" style = "width: 100%; height: 550px;" onclick="window.location.href = '/search';">
+		<div class = "text" onclick="window.location.href = '/search';">Star War</div>
 	</div>
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">2 / 3</div>
-		<img src = "{{ url_for('static', filename = 'WaterFall.jpg')}}" style = "width: 100%; height: 550px;">
-		<div class = "text">Carleton Waterfall</div>
+		<img src = "{{ url_for('static', filename = 'WaterFall.jpg')}}" style = "width: 100%; height: 550px;" onclick="window.location.href = '/search';">
+		<div class = "text" onclick="window.location.href = '/search';">Carleton Waterfall</div>
 	</div>
 	
 	<div class = "mySlides fade">
 		<div class = "numbertext">3 / 3</div>
-		<img src = "{{ url_for('static', filename = 'BaldSpot.jpg')}}.jpg" style = "width: 100%; height: 550px;">
-		<div class = "text">Carleton Bald Spot</div>
+		<img src = "{{ url_for('static', filename = 'BaldSpot.jpg')}}.jpg" style = "width: 100%; height: 550px;" onclick="window.location.href = '/search';">
+		<div class = "text" onclick="window.location.href = '/search';">Carleton Bald Spot</div>
 	</div>
 	
 	<a class = "prev" onclick = "plusSlides(-1)">&#10094</a>
