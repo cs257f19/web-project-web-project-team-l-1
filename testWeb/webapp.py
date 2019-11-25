@@ -14,11 +14,11 @@ iframe = 'http://perlman.mathcs.carleton.edu:5112/about'
 def displayHomepage():
 	global x
 	x=''
-	return render_template('homepage.html')
+	return render_template('startpage.html')
 
 @app.route('/search')
 def displaySearch():
-	return render_template('search.html')
+	return render_template('homepage.html')
 
 @app.route('/about')
 def about():
