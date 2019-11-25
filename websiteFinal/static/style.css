@@ -248,35 +248,6 @@ a:hover { text-decoration: underline; }
 }
 
 
-/* gallery stuff --- for the search results page*/
-
-div.gallery {
-  margin: 15px;
-  border: 1px solid gold;
-  float: left;
-  width: auto;
-  text-align: center;
-   text-decoration: none;
-  font-size: 17px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: auto;
-  height: 300px;
-}
-
-div.desc {
-  padding: 0px;
-  position: relative;
-  text-align: center;
-  top: 5px;
-  left: 16px;
-}
-
 /*
 Search menu ------------------------------------------------------
 */
@@ -354,8 +325,8 @@ Search menu ------------------------------------------------------
    text-align: center;
   border:outset;
   border-color: darkred;
-  padding: 5px 15px;
-  font-size: 17px;
+  padding: 20px 20px;
+  font-size: 25px;
 }
 #bold
 {
