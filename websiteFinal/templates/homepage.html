@@ -28,7 +28,7 @@
       <table align = "center">
          <tr align="left">
          {% if loop_length > 0 %}
-            <tr><th>Title and Rating</th></tr>
+            <tr><th></th></tr>
           {% for i in range(loop_length) %}
           <tr><button class = "BoldButton" hover = "show()"> {{movies[i]}} </button></tr>
           {% if taglines[i] is defined %}
@@ -52,9 +52,9 @@
 <div class="sidenav">
     <div id="header2">Browse Movies!</div>
     
-  <a>Click On Search Buttons</a>
-  <a>Click Submit to Search</a>
-  <a>Press Home/Submit to Clear Search</a>
+  <a id="header3">Click On Search Buttons</a>
+  <a id="header3">Click Submit to Search</a>
+  <a id="header3">Press Home/Submit to Clear Search</a>
 </div>
 
 <!--This section is to create a side bar showing hot talks about movies on reddit at the right of this page right under the popular genres bar.-->
