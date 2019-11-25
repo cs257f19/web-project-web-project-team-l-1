@@ -54,7 +54,7 @@ a:hover { text-decoration: underline; }
 }
 
 .topnav{
-	position: relative;
+	position: absolute;
 	margin-top: -2%;
 }
 
