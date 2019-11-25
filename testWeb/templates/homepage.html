@@ -27,6 +27,7 @@
       <table align = "center">
          <tr align="left">
          {% if loop_length is defined %}
+         {% if loop_length > 0 %}
             <tr><th>Title and Rating</th></tr>
           {% for i in range(loop_length) %}
           <tr><button class = "BoldButton" hover = "show()"> {{movies[i]}} </button></tr>
@@ -34,6 +35,7 @@
           {% endfor %}
          {% else %}
          <tr><th>None Found</th></tr>
+         {% endif %}
          {% endif %}
       </table>
 </div>
