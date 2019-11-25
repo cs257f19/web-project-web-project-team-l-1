@@ -469,10 +469,11 @@ def newreleases():
 @app.route('/submit')
 def submit():
     global x
-    myMovies = datasource.getMoviesByCategory(connection, x)
+    myMovies, Runtimes = datasource.getMoviesByCategory(connection, x)
     print(x)
     x=''
-    return render_template('homepage.html',movies= myMovies)
+    
+    return render_template('homepage.html',movies= myMovies, runtimes = Runtimes)
 # info info info info info
 @app.route('/getTime')
 def getTime():
